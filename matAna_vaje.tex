@@ -1,0 +1,488 @@
+\documentclass[11pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts} %ams packages
+\usepackage{graphicx, color} %grphics
+\usepackage{enumitem} %personalized lists 
+\usepackage[top=4cm, bottom=2cm, left=2cm, right=2cm, headsep = 3pt, footskip=2pt]{geometry} %pagelayout
+\usepackage{multirow,multicol} %to use multirow on tables
+\usepackage{tabularx}
+\usepackage{array} %bmatrix and similar stuff
+% \usepackage{hyperref}
+\usepackage[slovene]{babel}
+
+\usepackage{multicol}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%personalized commands to make latex look better (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\leq}{\leqslant} %menores y mayores iguales decentes
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\subset}{\subseteq} 
+\renewcommand{\supset}{\supseteq} 
+\renewcommand{\subsetneq}{\varsubsetneq}
+\renewcommand{\{}{\lbrace}
+\renewcommand{\}}{\rbrace}
+\newcommand{\sm}{\setminus} %setminus corto
+
+%\renewcommand{\bar}{\overline}
+%\renewcommand{\hat}{\widehat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%exam class commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{head}
+% \chead{ Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 1 \\17. februar 2025} %self-explanatory
+% \runningheader{}{ Abstraktna algebra 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\2. Kolokvij \\20. januar 2025}{} %self-explanatory
+% \runningheader{}{}{}
+% \footer{}{}{}
+% \firstpagefooter{MATH 1190 3.0 M  }{Page \thepage\ of \numpages}{Copyright 2020 \textcopyright Antonio Montero}
+% \firstpagefooter{}{}{}
+% \runningfooter{MATH 1190 3.0 M }{Page \thepage\ of \numpages}{Copyright 2020 \textcopyright Antonio Montero}
+% \firstpagefootrule 
+% \runningfootrule
+
+%%Solutions
+\unframedsolutions
+% \printanswers
+\SolutionEmphasis{\itshape}
+
+
+%Personalized commands
+\pointpoints{točka}{točke}
+% \gradetable[h][questions]
+\addpoints
+\hqword{Naloga}
+% \vpgword{text}
+\hpword{Točke}
+% \hsword{}
+% \hbpword{}
+\htword{Skupaj}
+
+% \pointsinrightmargin
+% \extrawidth{-2cm}
+\marginpointname{ \points}
+
+
+\chqword{Naloga}
+\chpgword{Stran}
+\chpword{točke}
+% \chbpword{Puntos extra}
+% \chsword{Puntos obtenidos
+\chtword{Skupaj}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \graphicspath{{../img/}} %Uso: \graphicspath{{RelativePath}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Personalized commands
+
+%Personalized commands
+
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+
+\newcolumntype{\cc}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{\rr}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\newcolumntype{\ll}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
+
+\newcommand{\TT}{\mathbf{T}}
+\newcommand{\FF}{\mathbf{F}}
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+\let\th\relax
+\DeclareMathOperator{\th}{th}
+\DeclareMathOperator{\arsh}{arsh}
+\DeclareMathOperator{\arch}{arch}
+\DeclareMathOperator{\arth}{arth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\newif\ifmarking
+% 		\markingtrue %comment to hide marking suggestions
+
+		\newenvironment{marking}
+		{\hrulefill
+		 
+		\textbf{Marking suggestions:} 
+		\ttfamily }
+		{\hrulefill }
+
+\allowdisplaybreaks
+
+% \renewcommand{\thepartno}{\roman{partno}}
+\renewcommand{\partlabel}{(\textit{\thepartno})}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 1 \\20. in 21. februar 2025}
+% \footer{}{}{}
+\pagestyle{head}
+
+
+\paragraph{Ključni pojmi:} Motivacija odvode, definicija odvode, osnovne lastnosti, odvodi osnovnih funkcij. 
+\section*{Vaje}
+\begin{questions}
+	\question
+	Po definiciji izračunajte odvode naslednjih funkcij v točki $a$.
+	\begin{multicols}{2}
+		\begin{parts}
+			\part $f(x)=3$, $a=7$.
+			% \part $f(x) = x^{3}$, $a=1$
+			\part $f(x)= x^{2} +2x-1$, $a =2$.
+			% \part $f(x) = \frac{3}{x^{3}}$, $a= -1$.
+			\part $f(x)=\begin{cases} e^{-\frac{1}{x}}, & \text{če } x>0 \\ 0 & \text{če } x\leq 0\end{cases},$ $a=0$
+			% \part $f(x) = -5x$, $a=1$.
+			\part $f(x)=\frac{1}{x^2}$, $a=1$.
+			\part $f(x)=\sqrt{x-4}$, $a=0$ in $a=1$.
+			\part $f(x)=|x|$, $a=0$.
+		\end{parts}
+	\end{multicols}
+
+
+ \question Po definiciji izračunajte odvode naslednjih funkcij:
+	\begin{multicols}{2}
+		\begin{parts}
+			\part $f(x) = e^{2x+1}$,
+			% \part $f(x)=\sqrt{2x}$
+			\part $f(x) = x^3 + x^2$
+			% \part $f(x) = \frac{1}{\sqrt{x+1}}$
+			\part $f(x)=\sin(3x)$
+			% \part $f(x) = \frac{1}{x - 1}$
+			\part $f(x) = 3x + 2$
+			% \part $f(x) = 9 - \frac{1}{2}x$
+			\part $f(x) = 2x^2 + x - 1$
+			% \part $f(x) = 1 - x^2$
+			\part $f(x) = x^3 - 12x$
+			% \part $f(x) = \frac{1}{x - 1}$
+			\part $f(x) = \frac{1}{\sqrt{x}}$
+		\end{parts}
+	\end{multicols}
+
+	\question Z uporabo znanih pravil za odvode, odvajajte naslednje funkcije:
+	\begin{multicols}{2}
+		\begin{parts}
+			\part $f(x) = 2x^4 + 3x - x^{\frac{1}{2}} + x^{-2} -3$
+			\part $f(x) = \frac{3}{x^2} + 2 \sqrt[3]{x \sqrt{x}} - \frac{3}{\sqrt{x}}$
+			\part $f(x) = e^x \cos x$
+			\part $f(x) = 2x^4 \tan(x)$
+			\part $f(x) = (\sin x + 2^x) \log(x)$
+			\part $f(x) = (x^2 + 2^x) \arcsin x$
+			\part $f(x) = \frac{e^x}{\sin x}$
+			\part $f(x) = \frac{\arctan x}{\ln x}$
+			\part $f(x) = \frac{2e^x+1}{\sqrt[3]{x+\sin x}}$
+			\part $f(x) = \frac{\ln(x)e^x}{\sin x}$
+			\part $f(x) = \sin(3x + \frac{\pi}{3})$
+			\part $f(x) = \sqrt[3]{x^2 - 2x}$
+			\part $f(x) = \arcsin(1 + e^x)$
+			\part $f(x) = e^{\sin x}$
+			\part $f(x) = (1 + \ln(x))^{10} \cos(4x)$
+			\part $f(x) = \frac{\arctan x}{\sqrt[3]{2x+1}+\sin(2x)}$
+			\part $f(x) = \frac{e^{2x}+\arccos(x^2)}{\sqrt[5]{2x+1}}$
+			\part $f(x) = \arctan(e^{2x+1} + \sqrt{2x+1})$
+			\part $f(x) = \sqrt[5]{\cos(2\ln(x)) + 1}$
+			\part $f(x) = (1 + x)^{\frac{1}{x}}$
+			\part $f(x) = (1 + 2x)^{\sin^2(x)}$.
+		\end{parts}
+	\end{multicols}
+\end{questions}
+
+	\section*{Seminar (predstavitve)}
+	\subsection*{Hiperbolične funkcije}
+		\emph{Hiperbolične kosinus}, \emph{sinus} in \emph{tangens} so definirane z naslednjimi predpisi:
+
+			\begin{align*}
+			\ch(x) = \frac{e^x + e^{-x}}{2}, &&
+			\sh(x) = \frac{e^x - e^{-x}}{2}, &&
+			\th(x)=\frac{\sh(x)}{\ch(x)}.
+			\end{align*}
+
+
+Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne funkcije, \emph{area funkcije},  $\arch$, $\arch$ in $\arth$. 
+\begin{questions}
+
+	\question Utemeljite, da je funkcija $\sh$ injektivna povsod $\mathbb{R}$,  njena zaloga vrednosti oziroma definicijsko območje $\arsh$ pa je $\mathcal{Z}_{\sh}=\mathcal{D}_{\arsh}=\mathbb{R}$. 
+	Funkcija $\ch$ postane injektivna kot zožitev na $[0,\infty)$ z zalogo vrednosti $\mathcal{Z}_{\ch}= [1,\infty) = \mathcal{D}_{\arch}$, $\th$ pa je injektivna povsod na $\mathbb{R}$ z zalogo vrednosti $\mathcal{Z}_{\th}= (-1,1) = \mathcal{D}_{\arth}$.
+	
+	\textbf{Ne pozabite}: Če je $f: D \subset \mathbb{R} \to \mathbb{R}$ funkcija, množico $D$ imenujemo \emph{definicijsko območje}, pa množico $\mathcal{Z}_{f}=f(D)= \{f(x): x \in D\}$ imenujemo \emph{zaloga vrednosti} funkcije $f$. V kolikor je funkcija $f$ podana samo s predpisom za domeno običajno vzamemo največjo podmnožico $\mathcal{D}_f \subset \mathbb{R}$, na kateri je ta predpis smisel. 
+	
+	\question Izpelji naslednji zvezi med hiperboličnimi funkcijami:
+	    \begin{align*}
+	    \ch^2 (x) - \sh^2 (x) = 1, &&\th^2 (x) = 1 - \frac{1}{\ch^{2}(x)}.
+	    \end{align*}
+	
+	
+	  Pokažite tudi, da lahko area funkcije izrazimo z ostalimi elementarnimi funcijami na naslednji način:
+	    \begin{alignat*}{2}
+	    \arsh(x) &= \ln (x + \sqrt{x^{2}+1}), &\quad  x &\in \mathbb{R}; \\ 
+	    \arch(x) &= \ln (x + \sqrt{x^{2}-1}), &  x &\geq 1; \\
+	    \arth(x) &= \frac{1}{2}\ln \left( \frac{1+x}{1-x}\right),& x &\in (-1,1).
+	    \end{alignat*}
+	\question Dokažite, da so odvodi hiperboličnih in njihovih inverznih funkcij enaki:
+	
+	    \begin{align*}
+	    \sh'(x)&=\ch(x) &\qquad \arsh'(x)&= \frac{1}{\sqrt{x^{2}-1}} \\
+	    \ch'(x)&=\sh(x) &\qquad \arch'(x)&= \frac{1}{\sqrt{x^{2}+1}} \\
+	    \th'(x)&=\frac{1}{\ch^{2}(x)} &\qquad \arth'(x)&= \frac{1}{1-x^{2}} \\
+	    \end{align*}
+\end{questions}
+\pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 3 \\6. in 7. marec 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 4 \\13. in 14. marec 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 5 \\20. in 21. marec 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 6 \\27. in 28. marec 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+\pagestyle{head}
+\paragraph{Ključni pojmi:}	
+\section*{Vaje}
+\begin{questions}
+	\question	
+\end{questions}
+\section*{Seminar (predstavitve)}
+	\begin{questions}
+		\question
+	\end{questions}
+% \pagestyle{empty}
+\clearpage
+
+\end{document}
