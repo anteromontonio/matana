@@ -120,13 +120,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 1 \\20. in 21. februar 2025}
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje}
 % \footer{}{}{}
 \pagestyle{head}
 
 
-\paragraph{Ključni pojmi:} Motivacija odvode, definicija odvode, osnovne lastnosti, odvodi osnovnih funkcij. 
-\section*{Vaje}
+% \paragraph{Ključni pojmi:} Motivacija odvode, definicija odvode, osnovne lastnosti, odvodi osnovnih funkcij. 
+\section*{Vaje (20. in 21. februar 2025)}
 \begin{questions}
 	\question
 	Po definiciji izračunajte odvode naslednjih funkcij v točki $a$.
@@ -192,56 +192,56 @@
 	\end{multicols}
 \end{questions}
 
-	\section*{Seminar (predstavitve)}
-	\subsection*{Hiperbolične funkcije}
-		\emph{Hiperbolične kosinus}, \emph{sinus} in \emph{tangens} so definirane z naslednjimi predpisi:
+	% \section*{Seminar (predstavitve)}
+% 	\subsection*{Hiperbolične funkcije}
+% 		\emph{Hiperbolične kosinus}, \emph{sinus} in \emph{tangens} so definirane z naslednjimi predpisi:
 
-			\begin{align*}
-			\ch(x) = \frac{e^x + e^{-x}}{2}, &&
-			\sh(x) = \frac{e^x - e^{-x}}{2}, &&
-			\th(x)=\frac{\sh(x)}{\ch(x)}.
-			\end{align*}
+% 			\begin{align*}
+% 			\ch(x) = \frac{e^x + e^{-x}}{2}, &&
+% 			\sh(x) = \frac{e^x - e^{-x}}{2}, &&
+% 			\th(x)=\frac{\sh(x)}{\ch(x)}.
+% 			\end{align*}
 
 
-Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne funkcije, \emph{area funkcije},  $\arch$, $\arch$ in $\arth$. 
-\begin{questions}
+% Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne funkcije, \emph{area funkcije},  $\arch$, $\arch$ in $\arth$. 
+% \begin{questions}
 
-	\question Utemeljite, da je funkcija $\sh$ injektivna povsod $\mathbb{R}$,  njena zaloga vrednosti oziroma definicijsko območje $\arsh$ pa je $\mathcal{Z}_{\sh}=\mathcal{D}_{\arsh}=\mathbb{R}$. 
-	Funkcija $\ch$ postane injektivna kot zožitev na $[0,\infty)$ z zalogo vrednosti $\mathcal{Z}_{\ch}= [1,\infty) = \mathcal{D}_{\arch}$, $\th$ pa je injektivna povsod na $\mathbb{R}$ z zalogo vrednosti $\mathcal{Z}_{\th}= (-1,1) = \mathcal{D}_{\arth}$. 
+% 	\question Utemeljite, da je funkcija $\sh$ injektivna povsod $\mathbb{R}$,  njena zaloga vrednosti oziroma definicijsko območje $\arsh$ pa je $\mathcal{Z}_{\sh}=\mathcal{D}_{\arsh}=\mathbb{R}$. 
+% 	Funkcija $\ch$ postane injektivna kot zožitev na $[0,\infty)$ z zalogo vrednosti $\mathcal{Z}_{\ch}= [1,\infty) = \mathcal{D}_{\arch}$, $\th$ pa je injektivna povsod na $\mathbb{R}$ z zalogo vrednosti $\mathcal{Z}_{\th}= (-1,1) = \mathcal{D}_{\arth}$. 
 	
-	\textbf{Ne pozabite}: Če je $f: D \subset \mathbb{R} \to \mathbb{R}$ funkcija, množico $D$ imenujemo \emph{definicijsko območje}, pa množico $\mathcal{Z}_{f}=f(D)= \{f(x): x \in D\}$ imenujemo \emph{zaloga vrednosti} funkcije $f$. V kolikor je funkcija $f$ podana samo s predpisom za domeno običajno vzamemo največjo podmnožico $\mathcal{D}_f \subset \mathbb{R}$, na kateri je ta predpis smisel. 
+% 	\textbf{Ne pozabite}: Če je $f: D \subset \mathbb{R} \to \mathbb{R}$ funkcija, množico $D$ imenujemo \emph{definicijsko območje}, pa množico $\mathcal{Z}_{f}=f(D)= \{f(x): x \in D\}$ imenujemo \emph{zaloga vrednosti} funkcije $f$. V kolikor je funkcija $f$ podana samo s predpisom za domeno običajno vzamemo največjo podmnožico $\mathcal{D}_f \subset \mathbb{R}$, na kateri je ta predpis smisel. 
 	
-	\question Izpelji naslednji zvezi med hiperboličnimi funkcijami:
-	    \begin{align*}
-	    \ch^2 (x) - \sh^2 (x) = 1, &&\th^2 (x) = 1 - \frac{1}{\ch^{2}(x)}.
-	    \end{align*}
+% 	\question Izpelji naslednji zvezi med hiperboličnimi funkcijami:
+% 	    \begin{align*}
+% 	    \ch^2 (x) - \sh^2 (x) = 1, &&\th^2 (x) = 1 - \frac{1}{\ch^{2}(x)}.
+% 	    \end{align*}
 	
 	
-	  Pokažite tudi, da lahko area funkcije izrazimo z ostalimi elementarnimi funcijami na naslednji način:
-	    \begin{alignat*}{2}
-	    \arsh(x) &= \ln (x + \sqrt{x^{2}+1}), &\quad  x &\in \mathbb{R}; \\ 
-	    \arch(x) &= \ln (x + \sqrt{x^{2}-1}), &  x &\geq 1; \\
-	    \arth(x) &= \frac{1}{2}\ln \left( \frac{1+x}{1-x}\right),& x &\in (-1,1).
-	    \end{alignat*}
-	\question Dokažite, da so odvodi hiperboličnih in njihovih inverznih funkcij enaki:
+% 	  Pokažite tudi, da lahko area funkcije izrazimo z ostalimi elementarnimi funcijami na naslednji način:
+% 	    \begin{alignat*}{2}
+% 	    \arsh(x) &= \ln (x + \sqrt{x^{2}+1}), &\quad  x &\in \mathbb{R}; \\ 
+% 	    \arch(x) &= \ln (x + \sqrt{x^{2}-1}), &  x &\geq 1; \\
+% 	    \arth(x) &= \frac{1}{2}\ln \left( \frac{1+x}{1-x}\right),& x &\in (-1,1).
+% 	    \end{alignat*}
+% 	\question Dokažite, da so odvodi hiperboličnih in njihovih inverznih funkcij enaki:
 	
-	    \begin{align*}
-	    \sh'(x)&=\ch(x) &\qquad \arsh'(x)&= \frac{1}{\sqrt{x^{2}+1}} \\
-	    \ch'(x)&=\sh(x) &\qquad \arch'(x)&= \frac{1}{\sqrt{x^{2}-1}} \\
-	    \th'(x)&=\frac{1}{\ch^{2}(x)} &\qquad \arth'(x)&= \frac{1}{1-x^{2}} \\
-	    \end{align*}
-\end{questions}
-\pagestyle{empty}
-\clearpage
+% 	    \begin{align*}
+% 	    \sh'(x)&=\ch(x) &\qquad \arsh'(x)&= \frac{1}{\sqrt{x^{2}+1}} \\
+% 	    \ch'(x)&=\sh(x) &\qquad \arch'(x)&= \frac{1}{\sqrt{x^{2}-1}} \\
+% 	    \th'(x)&=\frac{1}{\ch^{2}(x)} &\qquad \arth'(x)&= \frac{1}{1-x^{2}} \\
+% 	    \end{align*}
+% \end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Tangenta/normala, odvodi implicitnih funkcij, ekstreme točke.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 2 \\27. in 28. februar 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Tangenta/normala, odvodi implicitnih funkcij, ekstreme točke.
+\section*{Vaje (27. in 28. februar 2025)}
 \begin{questions}
 	\question	
 	Dana naj bo funkcija $f(x) = x^{3} - 11 x + 7$.
@@ -291,7 +291,7 @@ Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne fun
 
 
 
-\section*{Seminar (predstavitve)}
+% \section*{Seminar (predstavitve)}
 	\begin{questions}
 		\question Naj bodo $f$, $g$ in $h$ funkcije.
 		\begin{parts}
@@ -337,10 +337,10 @@ Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne fun
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 3 \\6. in 7. marec 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} ekstreme točke, Rollov izrek, Lagrangeev izrek.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 3 \\6. in 7. marec 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} ekstreme točke, Rollov izrek, Lagrangeev izrek.
+\section*{Vaje (6. in 7. marec 2025)}
 \begin{questions}
 
 	\question Dana je funkcija $f(x) = e^{x}$.
@@ -376,43 +376,43 @@ Na območjih, kjer so hiperbolične funkcije injektivne, definiramo inverzne fun
 
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question Dani $f \colon [a,b] \to \mathbb{R}$  in $g \colon [a,b] \to \mathbb{R}$  zvezni  funkciji na $[a,b]$ in odvedljivi na $(a,b)$.
-			\begin{parts}
-				\part Dokažite, da če je $f'(x) = 0$ za vsak $x \in (a,b)$, potem je $f$ konstantna funkcija.
-				\part Če velja da $f'(x) = g'(x)$ za vsak $x \in (a,b)$, potem obstaja $k \in \mathbb{R}$, da velja $f(x) = g(x) + k$ za vsak $x \in (a,b)$.
-				\part Predpostavimo, da velja $|f(x) - f(y)| \leq (x - y)^n$ za nekaj $n > 1$.  Dokažite, da je $f$ konstantna.
-				\part Predpostavimo, da je $f'(x) > g'(x)$ za vsak $x$ in da za nekaj $c \in  (a, b)$  velja $f(c) = g(c).$ Dokažite, da $f(x) > g(x)$ za $x > c$ in $f(x) < g(x)$ za $x < c$.
-				\part S primerom pokažite, da prejšnja trditev ne drži brez predpostavke $f(c) = g(c)$.
-			\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question Dani $f \colon [a,b] \to \mathbb{R}$  in $g \colon [a,b] \to \mathbb{R}$  zvezni  funkciji na $[a,b]$ in odvedljivi na $(a,b)$.
+% 			\begin{parts}
+% 				\part Dokažite, da če je $f'(x) = 0$ za vsak $x \in (a,b)$, potem je $f$ konstantna funkcija.
+% 				\part Če velja da $f'(x) = g'(x)$ za vsak $x \in (a,b)$, potem obstaja $k \in \mathbb{R}$, da velja $f(x) = g(x) + k$ za vsak $x \in (a,b)$.
+% 				\part Predpostavimo, da velja $|f(x) - f(y)| \leq (x - y)^n$ za nekaj $n > 1$.  Dokažite, da je $f$ konstantna.
+% 				\part Predpostavimo, da je $f'(x) > g'(x)$ za vsak $x$ in da za nekaj $c \in  (a, b)$  velja $f(c) = g(c).$ Dokažite, da $f(x) > g(x)$ za $x > c$ in $f(x) < g(x)$ za $x < c$.
+% 				\part S primerom pokažite, da prejšnja trditev ne drži brez predpostavke $f(c) = g(c)$.
+% 			\end{parts}
 
-			\question Dana je funkcija $f(x) = \ln(x)$.
-				\begin{parts}
-				\part Zapožite trditev Lagrangeevega izreka za funkcijo $f$ na intervalu $[a, a+1]$, kjer $a > 0$. S pomožjio dobljenega nato dokažite neenakost:
-					\[
-						\frac{1}{1+a} < \ln \left( 1 + \frac{1}{a} \right) < \frac{1}{a}, \qquad a>0.
-					\]
-					\part S pomočjo zgoraj dokazane neenakosti dokažite, da za delne vsote harmonične vrste velja:
-					\[
-						\ln(n) + 1 \geq 1 + \frac{1}{2}+ \frac{1}{3} + \cdots + \frac{1}{n} > \ln(n+1), \qquad n \in \mathbb{N}.
-					\]
-				\end{parts}
+% 			\question Dana je funkcija $f(x) = \ln(x)$.
+% 				\begin{parts}
+% 				\part Zapožite trditev Lagrangeevega izreka za funkcijo $f$ na intervalu $[a, a+1]$, kjer $a > 0$. S pomožjio dobljenega nato dokažite neenakost:
+% 					\[
+% 						\frac{1}{1+a} < \ln \left( 1 + \frac{1}{a} \right) < \frac{1}{a}, \qquad a>0.
+% 					\]
+% 					\part S pomočjo zgoraj dokazane neenakosti dokažite, da za delne vsote harmonične vrste velja:
+% 					\[
+% 						\ln(n) + 1 \geq 1 + \frac{1}{2}+ \frac{1}{3} + \cdots + \frac{1}{n} > \ln(n+1), \qquad n \in \mathbb{N}.
+% 					\]
+% 				\end{parts}
 
 	
 		
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 4 \\13. in 14. marec 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi}: Lagrangeev izrek, L'Hopitalovo pravilo, grafi funkcij, parametrične in polarne krivulje.	
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 4 \\13. in 14. marec 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi}: Lagrangeev izrek, L'Hopitalovo pravilo, grafi funkcij, parametrične in polarne krivulje.	
+\section*{Vaje (13. in 14. marec 2025)}
 \begin{questions}
 	\question Dokažite, da velja:
 		\begin{parts}
@@ -522,36 +522,36 @@ V implicitni ali polarni obliki so podane naslednje krivulje:
 \end{parts}
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question Določite parametre $a$, $b$ in $c$ tako, da bo funkcija
-\[
-f(x) = \begin{cases}
-\ln (2+x), & x<0; \\
-ax^{2} +bx + c, & 0 \leq x \leq 1; \\
-\frac{x \ln(x) -x +1}{(x-1)\ln(x)}, & x>1.
-\end{cases}
-\]
-zvezna v točki $x=1$ in zvezno odvedljiva v točki $x = 0$ (t.j. $f'$ obstaja in je zvezna v točki $x=0$); ter izračunajte limito $\lim_{x \to \infty} f(x)$. Ali je pri dobljenih parametrih funkcija $f$ tudi odvedljiva v točki $x=1$? \textbf{Nasvet}: Desni odvod v točki $x=0$ računajte po definiciji.
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question Določite parametre $a$, $b$ in $c$ tako, da bo funkcija
+% \[
+% f(x) = \begin{cases}
+% \ln (2+x), & x<0; \\
+% ax^{2} +bx + c, & 0 \leq x \leq 1; \\
+% \frac{x \ln(x) -x +1}{(x-1)\ln(x)}, & x>1.
+% \end{cases}
+% \]
+% zvezna v točki $x=1$ in zvezno odvedljiva v točki $x = 0$ (t.j. $f'$ obstaja in je zvezna v točki $x=0$); ter izračunajte limito $\lim_{x \to \infty} f(x)$. Ali je pri dobljenih parametrih funkcija $f$ tudi odvedljiva v točki $x=1$? \textbf{Nasvet}: Desni odvod v točki $x=0$ računajte po definiciji.
 
-\question Spodnja slika prikazuje graf odvoda funkcije $f$. Predpostavimo, da je $f(0)=0$. Čim natančneje skicirajte graf funkcije $f$. Svoj odgovor čim bolje utemeljite.
-\begin{figure}[h]
-	\centering
-\includegraphics[width=0.5\textwidth]{odvod}
-\caption{Graf odvoda funkcije $f$.}
-\end{figure}
-	\end{questions}
-\pagestyle{empty}
-\clearpage
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \question Spodnja slika prikazuje graf odvoda funkcije $f$. Predpostavimo, da je $f(0)=0$. Čim natančneje skicirajte graf funkcije $f$. Svoj odgovor čim bolje utemeljite.
+% \begin{figure}[h]
+% 	\centering
+% \includegraphics[width=0.5\textwidth]{odvod}
+% \caption{Graf odvoda funkcije $f$.}
+% \end{figure}
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 5 \\20. in 21. marec 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi}: nedoločene integrale, grafi funkcij.
-\section*{Vaje}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 5 \\20. in 21. marec 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi}: nedoločene integrale, grafi funkcij.
+\section*{Vaje (20. in 21. marec 2025)}
 
 \begin{questions}
 
@@ -658,49 +658,49 @@ zvezna v točki $x=1$ in zvezno odvedljiva v točki $x = 0$ (t.j. $f'$ obstaja i
 \end{multicols}
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-			\question V implicitni in parametrični obliko so podane naslednje krivulje:
-		\begin{itemize}
-				\item $ x(t) = 4\cos(t), \quad y(t) = 3\sin(t), \quad t \in \mathbb{R}$, (elipsa);
-				% \item $ x(t) = \pm 4\cosh(t), \quad y(t) = 3\sinh(t), \quad t \in \mathbb{R}$, (hiperbola);
-				\item $ x^{\frac{2}{3}} + y^{\frac{2}{3}} = 1$, (asteroida). \textbf{Nasvet}: Parametriziraj z $ x(t) = \cos^3(t), \quad y(t) = \sin^3(t), \quad t \in [0,2\pi] $;
-				% \item $ x(t) = \sin(2t), \quad y(t) = \sin(t), \quad t \in \mathbb{R}$;
-				% \item $ x(t) = t^2 - 1, \quad y(t) = t(t^2 - 1), \quad t \in \mathbb{R}$;
-				% \item $ x(t) = a(t - \sin t), \quad y(t) = a(1 - \cos t), \quad t \in \mathbb{R}, \quad a > 0 $, (cikloda);
-				% \item $ x^3 - 3axy + y^3 = 0, \quad a > 0$, (Descartesov list). \textbf{Nasvet}: Vpelji parameter $ t = \frac{x}{y} $;
-				% \item $ x = \cos(at), \quad y = \sin(at), \quad z = bt, \quad t \in \mathbb{R}, $ (vijačnica).
-		\end{itemize}
-		\begin{parts}
-			\part Čimbolj natančno narišite krivulje. Nasvet: Skicirajte grafa $x(t)$ in $y(t)$, ter poskusite določiti ekstremne točke, t.j. rešite tenačbi $\dot{x} =0$ in $\dot{y}=0$.
-			\part Izračunajte naklon krivulje oziroma $y'=\frac{\dot{y}}{\dot{x}}$. Izberite si neko točko na krivulji in določite tangento na dano krivuljo v tej točki, če obstaja.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+	% \begin{questions}
+	% 		\question V implicitni in parametrični obliko so podane naslednje krivulje:
+	% 	\begin{itemize}
+	% 			\item $ x(t) = 4\cos(t), \quad y(t) = 3\sin(t), \quad t \in \mathbb{R}$, (elipsa);
+	% 			% \item $ x(t) = \pm 4\cosh(t), \quad y(t) = 3\sinh(t), \quad t \in \mathbb{R}$, (hiperbola);
+	% 			\item $ x^{\frac{2}{3}} + y^{\frac{2}{3}} = 1$, (asteroida). \textbf{Nasvet}: Parametriziraj z $ x(t) = \cos^3(t), \quad y(t) = \sin^3(t), \quad t \in [0,2\pi] $;
+	% 			% \item $ x(t) = \sin(2t), \quad y(t) = \sin(t), \quad t \in \mathbb{R}$;
+	% 			% \item $ x(t) = t^2 - 1, \quad y(t) = t(t^2 - 1), \quad t \in \mathbb{R}$;
+	% 			% \item $ x(t) = a(t - \sin t), \quad y(t) = a(1 - \cos t), \quad t \in \mathbb{R}, \quad a > 0 $, (cikloda);
+	% 			% \item $ x^3 - 3axy + y^3 = 0, \quad a > 0$, (Descartesov list). \textbf{Nasvet}: Vpelji parameter $ t = \frac{x}{y} $;
+	% 			% \item $ x = \cos(at), \quad y = \sin(at), \quad z = bt, \quad t \in \mathbb{R}, $ (vijačnica).
+	% 	\end{itemize}
+	% 	\begin{parts}
+	% 		\part Čimbolj natančno narišite krivulje. Nasvet: Skicirajte grafa $x(t)$ in $y(t)$, ter poskusite določiti ekstremne točke, t.j. rešite tenačbi $\dot{x} =0$ in $\dot{y}=0$.
+	% 		\part Izračunajte naklon krivulje oziroma $y'=\frac{\dot{y}}{\dot{x}}$. Izberite si neko točko na krivulji in določite tangento na dano krivuljo v tej točki, če obstaja.
+	% 	\end{parts}
 		
-		\question V implicitni ali polarni obliki so podane naslednje krivulje:
-		\begin{itemize}
-				% \item $ r(\varphi) = \frac{a}{\varphi}, \quad \varphi \in \mathbb{R}^+$, (hiperbolična spirala).
-				% \item $r(\varphi) = e^{a\varphi}$, (logaritemska spirala).
-				\item $r(\varphi) = \cos(3\varphi), \quad \varphi \in \left[-\frac{\pi}{6}, \frac{\pi}{6} \right] \cup \left[\frac{\pi}{2}, \frac{5\pi}{6} \right] \cup \left[\frac{7\pi}{6}, \frac{9\pi}{6} \right]$.
-				\item $r(\varphi) = a(1 + \cos(\varphi)), \quad \varphi \in [-\pi, \pi] $, (kardioida).
-				% \item $(x^2 + y^2) = 2a^2(x^2 - y^2), \quad a > 0$, (lemniskata). \textvf{Nasvet}: Vpelji polarne koordinate.
-		\end{itemize}
-		\begin{parts}
-		\part Čimbolj natančno narišite dane krivulje. Nasvet: skicirajte grafe $r(\varphi)$, $x(\varphi)$ in $y(\varphi)$; poskusite določiti ekstremne točke, t.j. rešite enačbi $\dot{x}=0$ in $\dot{y}=0$.
-		\part Izračunajte naklon krivulje oziroma $y' =\frac{\dot{y}}{\dot{x}}$. Določite tangento na dano krivulje v točki, ko je kot $\varphi = \frac{\pi}{2}$, če obstaja.
-		\end{parts}
+	% 	\question V implicitni ali polarni obliki so podane naslednje krivulje:
+	% 	\begin{itemize}
+	% 			% \item $ r(\varphi) = \frac{a}{\varphi}, \quad \varphi \in \mathbb{R}^+$, (hiperbolična spirala).
+	% 			% \item $r(\varphi) = e^{a\varphi}$, (logaritemska spirala).
+	% 			\item $r(\varphi) = \cos(3\varphi), \quad \varphi \in \left[-\frac{\pi}{6}, \frac{\pi}{6} \right] \cup \left[\frac{\pi}{2}, \frac{5\pi}{6} \right] \cup \left[\frac{7\pi}{6}, \frac{9\pi}{6} \right]$.
+	% 			\item $r(\varphi) = a(1 + \cos(\varphi)), \quad \varphi \in [-\pi, \pi] $, (kardioida).
+	% 			% \item $(x^2 + y^2) = 2a^2(x^2 - y^2), \quad a > 0$, (lemniskata). \textvf{Nasvet}: Vpelji polarne koordinate.
+	% 	\end{itemize}
+	% 	\begin{parts}
+	% 	\part Čimbolj natančno narišite dane krivulje. Nasvet: skicirajte grafe $r(\varphi)$, $x(\varphi)$ in $y(\varphi)$; poskusite določiti ekstremne točke, t.j. rešite enačbi $\dot{x}=0$ in $\dot{y}=0$.
+	% 	\part Izračunajte naklon krivulje oziroma $y' =\frac{\dot{y}}{\dot{x}}$. Določite tangento na dano krivulje v točki, ko je kot $\varphi = \frac{\pi}{2}$, če obstaja.
+	% 	\end{parts}
 
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+	% \end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 6 \\27. in 28. marec 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Integracijske metode.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 6 \\27. in 28. marec 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Integracijske metode.
+\section*{Vaje (27. in 28. marec 2025)}
 \begin{questions}
 	\question Izračunajte nedoločene integrale naslednjih racionalnih funkcij:
 \begin{multicols}{2}
@@ -750,101 +750,101 @@ zvezna v točki $x=1$ in zvezno odvedljiva v točki $x = 0$ (t.j. $f'$ obstaja i
 \end{parts}
 \end{multicols}	
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question V implicitni in parametrični obliko so podane naslednje krivulje:
-		\begin{itemize}
-				\item $ x(t) = 4\cos(t), \quad y(t) = 3\sin(t), \quad t \in \mathbb{R}$, (elipsa);
-				% \item $ x(t) = \pm 4\cosh(t), \quad y(t) = 3\sinh(t), \quad t \in \mathbb{R}$, (hiperbola);
-				\item $ x^{\frac{2}{3}} + y^{\frac{2}{3}} = 1$, (asteroida). \textbf{Nasvet}: Parametriziraj z $ x(t) = \cos^3(t), \quad y(t) = \sin^3(t), \quad t \in [0,2\pi] $;
-				% \item $ x(t) = \sin(2t), \quad y(t) = \sin(t), \quad t \in \mathbb{R}$;
-				% \item $ x(t) = t^2 - 1, \quad y(t) = t(t^2 - 1), \quad t \in \mathbb{R}$;
-				% \item $ x(t) = a(t - \sin t), \quad y(t) = a(1 - \cos t), \quad t \in \mathbb{R}, \quad a > 0 $, (cikloda);
-				% \item $ x^3 - 3axy + y^3 = 0, \quad a > 0$, (Descartesov list). \textbf{Nasvet}: Vpelji parameter $ t = \frac{x}{y} $;
-				% \item $ x = \cos(at), \quad y = \sin(at), \quad z = bt, \quad t \in \mathbb{R}, $ (vijačnica).
-		\end{itemize}
-		\begin{parts}
-			\part Čimbolj natančno narišite krivulje. Nasvet: Skicirajte grafa $x(t)$ in $y(t)$, ter poskusite določiti ekstremne točke, t.j. rešite tenačbi $\dot{x} =0$ in $\dot{y}=0$.
-			\part Izračunajte naklon krivulje oziroma $y'=\frac{\dot{y}}{\dot{x}}$. Izberite si neko točko na krivulji in določite tangento na dano krivuljo v tej točki, če obstaja.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question V implicitni in parametrični obliko so podane naslednje krivulje:
+% 		\begin{itemize}
+% 				\item $ x(t) = 4\cos(t), \quad y(t) = 3\sin(t), \quad t \in \mathbb{R}$, (elipsa);
+% 				% \item $ x(t) = \pm 4\cosh(t), \quad y(t) = 3\sinh(t), \quad t \in \mathbb{R}$, (hiperbola);
+% 				\item $ x^{\frac{2}{3}} + y^{\frac{2}{3}} = 1$, (asteroida). \textbf{Nasvet}: Parametriziraj z $ x(t) = \cos^3(t), \quad y(t) = \sin^3(t), \quad t \in [0,2\pi] $;
+% 				% \item $ x(t) = \sin(2t), \quad y(t) = \sin(t), \quad t \in \mathbb{R}$;
+% 				% \item $ x(t) = t^2 - 1, \quad y(t) = t(t^2 - 1), \quad t \in \mathbb{R}$;
+% 				% \item $ x(t) = a(t - \sin t), \quad y(t) = a(1 - \cos t), \quad t \in \mathbb{R}, \quad a > 0 $, (cikloda);
+% 				% \item $ x^3 - 3axy + y^3 = 0, \quad a > 0$, (Descartesov list). \textbf{Nasvet}: Vpelji parameter $ t = \frac{x}{y} $;
+% 				% \item $ x = \cos(at), \quad y = \sin(at), \quad z = bt, \quad t \in \mathbb{R}, $ (vijačnica).
+% 		\end{itemize}
+% 		\begin{parts}
+% 			\part Čimbolj natančno narišite krivulje. Nasvet: Skicirajte grafa $x(t)$ in $y(t)$, ter poskusite določiti ekstremne točke, t.j. rešite tenačbi $\dot{x} =0$ in $\dot{y}=0$.
+% 			\part Izračunajte naklon krivulje oziroma $y'=\frac{\dot{y}}{\dot{x}}$. Izberite si neko točko na krivulji in določite tangento na dano krivuljo v tej točki, če obstaja.
+% 		\end{parts}
 		
-		\question V implicitni ali polarni obliki so podane naslednje krivulje:
-		\begin{itemize}
-				% \item $ r(\varphi) = \frac{a}{\varphi}, \quad \varphi \in \mathbb{R}^+$, (hiperbolična spirala).
-				% \item $r(\varphi) = e^{a\varphi}$, (logaritemska spirala).
-				\item $r(\varphi) = \cos(3\varphi), \quad \varphi \in \left[-\frac{\pi}{6}, \frac{\pi}{6} \right] \cup \left[\frac{\pi}{2}, \frac{5\pi}{6} \right] \cup \left[\frac{7\pi}{6}, \frac{9\pi}{6} \right]$.
-				\item $r(\varphi) = a(1 + \cos(\varphi)), \quad \varphi \in [-\pi, \pi] $, (kardioida).
-				% \item $(x^2 + y^2) = 2a^2(x^2 - y^2), \quad a > 0$, (lemniskata). \textvf{Nasvet}: Vpelji polarne koordinate.
-		\end{itemize}
-		\begin{parts}
-		\part Čimbolj natančno narišite dane krivulje. Nasvet: skicirajte grafe $r(\varphi)$, $x(\varphi)$ in $y(\varphi)$; poskusite določiti ekstremne točke, t.j. rešite enačbi $\dot{x}=0$ in $\dot{y}=0$.
-		\part Izračunajte naklon krivulje oziroma $y' =\frac{\dot{y}}{\dot{x}}$. Določite tangento na dano krivulje v točki, ko je kot $\varphi = \frac{\pi}{2}$, če obstaja.
-		\end{parts}
+% 		\question V implicitni ali polarni obliki so podane naslednje krivulje:
+% 		\begin{itemize}
+% 				% \item $ r(\varphi) = \frac{a}{\varphi}, \quad \varphi \in \mathbb{R}^+$, (hiperbolična spirala).
+% 				% \item $r(\varphi) = e^{a\varphi}$, (logaritemska spirala).
+% 				\item $r(\varphi) = \cos(3\varphi), \quad \varphi \in \left[-\frac{\pi}{6}, \frac{\pi}{6} \right] \cup \left[\frac{\pi}{2}, \frac{5\pi}{6} \right] \cup \left[\frac{7\pi}{6}, \frac{9\pi}{6} \right]$.
+% 				\item $r(\varphi) = a(1 + \cos(\varphi)), \quad \varphi \in [-\pi, \pi] $, (kardioida).
+% 				% \item $(x^2 + y^2) = 2a^2(x^2 - y^2), \quad a > 0$, (lemniskata). \textvf{Nasvet}: Vpelji polarne koordinate.
+% 		\end{itemize}
+% 		\begin{parts}
+% 		\part Čimbolj natančno narišite dane krivulje. Nasvet: skicirajte grafe $r(\varphi)$, $x(\varphi)$ in $y(\varphi)$; poskusite določiti ekstremne točke, t.j. rešite enačbi $\dot{x}=0$ in $\dot{y}=0$.
+% 		\part Izračunajte naklon krivulje oziroma $y' =\frac{\dot{y}}{\dot{x}}$. Določite tangento na dano krivulje v točki, ko je kot $\varphi = \frac{\pi}{2}$, če obstaja.
+% 		\end{parts}
 
-		\question
-\begin{parts}
-\part Naj bo $n$ naravno število. Z integracijo `po delih' (per partes) pokažite, da velja
+% 		\question
+% \begin{parts}
+% \part Naj bo $n$ naravno število. Z integracijo `po delih' (per partes) pokažite, da velja
     
-    \[
-    \int x^n e^{ax} \,dx = \frac{x^n e^{ax}}{a} - \frac{n}{a} \int x^{n-1} e^{ax} \,dx, \quad a \neq 0.
-    \]
+%     \[
+%     \int x^n e^{ax} \,dx = \frac{x^n e^{ax}}{a} - \frac{n}{a} \int x^{n-1} e^{ax} \,dx, \quad a \neq 0.
+%     \]
     
-\part Pokažite, da velja
-    \[
-    \int (\ln x)^n \,dx = x (\ln x)^n - n \int (\ln x)^{n-1} \,dx. 
-		\]
+% \part Pokažite, da velja
+%     \[
+%     \int (\ln x)^n \,dx = x (\ln x)^n - n \int (\ln x)^{n-1} \,dx. 
+% 		\]
     
-\part S pomočjo zgornjih formul izračunajte naslednje integrale:
-		\begin{multicols}{2}
-			\begin{itemize}
-				\item $\int x^3 e^{2x} \,dx.$ 
-				\item $\int x^2 e^{-x} \,dx.$ 
-				\item $\int (\ln x)^3 \,dx.$ 
-				\item $\int (\ln x)^4 \,dx.$ 
-			\end{itemize}
-		\end{multicols}	
+% \part S pomočjo zgornjih formul izračunajte naslednje integrale:
+% 		\begin{multicols}{2}
+% 			\begin{itemize}
+% 				\item $\int x^3 e^{2x} \,dx.$ 
+% 				\item $\int x^2 e^{-x} \,dx.$ 
+% 				\item $\int (\ln x)^3 \,dx.$ 
+% 				\item $\int (\ln x)^4 \,dx.$ 
+% 			\end{itemize}
+% 		\end{multicols}	
     
-\part Kot lahko vidite, če bi integrirali  $\int x^3 e^x \,dx$  z integracijo per partes, bi bil rezultat oblike
-		\[
-    \int x^3 e^x \,dx = A x^3 e^x + B x^2 e^x + C x e^x + D e^x + E.  
-		\]
+% \part Kot lahko vidite, če bi integrirali  $\int x^3 e^x \,dx$  z integracijo per partes, bi bil rezultat oblike
+% 		\[
+%     \int x^3 e^x \,dx = A x^3 e^x + B x^2 e^x + C x e^x + D e^x + E.  
+% 		\]
     
-   Odvajajte obe strani te enačbe in izračunajte koeficiente  $A, B, C, D$. Na ta način lahko izračunate integral, ne da bi dejansko izvedli integracijo.
+%    Odvajajte obe strani te enačbe in izračunajte koeficiente  $A, B, C, D$. Na ta način lahko izračunate integral, ne da bi dejansko izvedli integracijo.
     
-\part Dokažite, da če je  $P$  polinom stopnje  $k$ , potem velja
-		\[
-    \int P(x) e^x \,dx = [P(x) - P'(x) + \dots \pm P^{(k)}(x)] e^x + C.
-		\]
+% \part Dokažite, da če je  $P$  polinom stopnje  $k$ , potem velja
+% 		\[
+%     \int P(x) e^x \,dx = [P(x) - P'(x) + \dots \pm P^{(k)}(x)] e^x + C.
+% 		\]
     
-    Namig: Uporabite lahko podobno idejo kot pri (d)
+%     Namig: Uporabite lahko podobno idejo kot pri (d)
     
-\part Izračunajte nasledne integrale
-	\begin{itemize}    
-     \item $\int (x^2 - 3x + 1)e^x \,dx.$ 
-     \item $\int (x^3 - 2x)e^x \,dx.$
-  \end{itemize}
-\end{parts}
+% \part Izračunajte nasledne integrale
+% 	\begin{itemize}    
+%      \item $\int (x^2 - 3x + 1)e^x \,dx.$ 
+%      \item $\int (x^3 - 2x)e^x \,dx.$
+%   \end{itemize}
+% \end{parts}
 
-\question Upoštevajte integral 
-\[
-\int \tan(x) = \int \frac{\sin(x)}{\cos(x)}
-\]
+% \question Upoštevajte integral 
+% \[
+% \int \tan(x) = \int \frac{\sin(x)}{\cos(x)}
+% \]
 
-Integral izračunajte z uporabo integracije “per partes”, pri čemer definirajte $u = \frac{1}{\cos(x)}$ in $dv=\sin(x) dx$.
+% Integral izračunajte z uporabo integracije “per partes”, pri čemer definirajte $u = \frac{1}{\cos(x)}$ in $dv=\sin(x) dx$.
 
-Kaj se je zgodilo? ali lahko razložite, zakaj se je to zgodilo?
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% Kaj se je zgodilo? ali lahko razložite, zakaj se je to zgodilo?
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 7 \\3. in 4. april 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Določeni integral, Riemmannova/Darbouxjevega vsota.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 7 \\3. in 4. april 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Določeni integral, Riemmannova/Darbouxjevega vsota.
+\section*{Vaje (3. in 4. april 2025)}
 \begin{questions}
 	\question Direktno preko definicije Riemannovega oziroma Darbouxjevega integrala (t.j. z Riemannovimi oziroma Darbouxjevimi vsotami) pokažite, da sta konstantna funkcija $f(x) = C$ in linearna funkcija $g(x) = x$ integrabilni na poljubnem intervalu $[a,b]$, ter izračunajte njuna določena integrala $\int_{a}^{b} C dx$ in $\int_{a}^{b} x dx$.
 
@@ -944,18 +944,18 @@ Kaj se je zgodilo? ali lahko razložite, zakaj se je to zgodilo?
 % 	\begin{questions}
 % 		\question
 % 	\end{questions}
-\pagestyle{empty}
-\clearpage
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 8 \\10. in 11. april 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:}Določeni integral, Riemmannova/Darbouxjevega vsota, osnovni izrek integralskega računa.
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 8 \\10. in 11. april 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:}Določeni integral, Riemmannova/Darbouxjevega vsota, osnovni izrek integralskega računa.
 
-\section*{Vaje}
+\section*{Vaje (10. in 11. april 2025)}
 \begin{questions}
 	\question Dana je funkcija $f(x)= x^{3}$.
 	\begin{parts}
@@ -1019,40 +1019,40 @@ Kaj se je zgodilo? ali lahko razložite, zakaj se je to zgodilo?
 
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
 
-		\question Dana je funkcija $f:[a,b] \to \mathbb{R}$ in delitev $\mathcal{D}: a = x_{0} < \cdots < x_{n} = b$. 
-		\begin{parts}
-			\part Za dano delitev intervala $\mathcal{D}$ in funkcijo $f$ definiramo izraz \[T(\mathcal{D}, f) = \sum_{i=1}^{n} \frac{1}{2} \left( f(x_{i}) + f(x_{i-1}) \right)\left(x_{i} - x_{i-1} \right).\]
-			Kaj geometrijsko predstavlja zgornja vsota?
-			\part Pokažite, da v posebnem primeru, ko so podintervali dane delitve enako veliki (t.j. $x_{i} - x_{i-1} = \frac{b-a}{n}$ za vse $i \in \left\{ 1, \dots, n \right\}$) velja \emph{trapezna formula}:
-			\[T(\mathcal{D},f) = \frac{b-a}{2n}\left( f(x_{0}) + 2 f(x_{1}) + 2 f(x_{2}) + \cdots + 2 f(x_{n-1}) + f(x_{n}) \right).\]
-			\part Izračunajte $T(\mathcal{D},f)$ za funkcijo $f(x) = e^{-x^{2}}$ in delitev intervala $[0,1]$ na šest enakih podintervalov, $\mathcal{D}: 0 < \frac{1}{6} < \frac{2}{6} < \frac{3}{6} < \frac{4}{6} < \frac{5}{6} < 1$. 
-		\end{parts}
+% 		\question Dana je funkcija $f:[a,b] \to \mathbb{R}$ in delitev $\mathcal{D}: a = x_{0} < \cdots < x_{n} = b$. 
+% 		\begin{parts}
+% 			\part Za dano delitev intervala $\mathcal{D}$ in funkcijo $f$ definiramo izraz \[T(\mathcal{D}, f) = \sum_{i=1}^{n} \frac{1}{2} \left( f(x_{i}) + f(x_{i-1}) \right)\left(x_{i} - x_{i-1} \right).\]
+% 			Kaj geometrijsko predstavlja zgornja vsota?
+% 			\part Pokažite, da v posebnem primeru, ko so podintervali dane delitve enako veliki (t.j. $x_{i} - x_{i-1} = \frac{b-a}{n}$ za vse $i \in \left\{ 1, \dots, n \right\}$) velja \emph{trapezna formula}:
+% 			\[T(\mathcal{D},f) = \frac{b-a}{2n}\left( f(x_{0}) + 2 f(x_{1}) + 2 f(x_{2}) + \cdots + 2 f(x_{n-1}) + f(x_{n}) \right).\]
+% 			\part Izračunajte $T(\mathcal{D},f)$ za funkcijo $f(x) = e^{-x^{2}}$ in delitev intervala $[0,1]$ na šest enakih podintervalov, $\mathcal{D}: 0 < \frac{1}{6} < \frac{2}{6} < \frac{3}{6} < \frac{4}{6} < \frac{5}{6} < 1$. 
+% 		\end{parts}
 
-		\question S pomočjo določenega integrala izračunajte naslednje limite:
-			\begin{parts}
-				\part $\displaystyle \lim_{n \to \infty} \left( \frac{1}{n+1} + \frac{1}{n+2} + \cdots + \frac{1}{2n} \right)$
-				\part $\displaystyle \lim_{n \to \infty} \frac{\sqrt{1} + \sqrt{2} + \cdots + \sqrt{n}}{\sqrt{n^{3}}}$
-				\part $\displaystyle \lim_{n \to \infty} \frac{1 + \sqrt[n]{e} + \sqrt[n]{e^{2}} + \cdots + \sqrt[n]{e^{n-1}} }{n}$
-			\end{parts}
+% 		\question S pomočjo določenega integrala izračunajte naslednje limite:
+% 			\begin{parts}
+% 				\part $\displaystyle \lim_{n \to \infty} \left( \frac{1}{n+1} + \frac{1}{n+2} + \cdots + \frac{1}{2n} \right)$
+% 				\part $\displaystyle \lim_{n \to \infty} \frac{\sqrt{1} + \sqrt{2} + \cdots + \sqrt{n}}{\sqrt{n^{3}}}$
+% 				\part $\displaystyle \lim_{n \to \infty} \frac{1 + \sqrt[n]{e} + \sqrt[n]{e^{2}} + \cdots + \sqrt[n]{e^{n-1}} }{n}$
+% 			\end{parts}
 
 	
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 9 \\17. in 18. april 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Uporaba integrala v geometriji in fiziki, izlimitirani integral.
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 9 \\17. in 18. april 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Uporaba integrala v geometriji in fiziki, izlimitirani integral.
 
-\section*{Vaje}
+\section*{Vaje (17. in 18. april 2025)}
 
 \begin{questions}
 	\question Utemeljite, zakaj so naslednji integrali posplošeni in jih izračunaj, če lahko:
@@ -1142,27 +1142,27 @@ Kaj se je zgodilo? ali lahko razložite, zakaj se je to zgodilo?
 \end{questions}
 
 
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question \emph{Gabrielov rog} (znan tudi kot \emph{Torricellijeva trobenta}) je ploskev, ki jo dobimo, če graf funkcije $f(x) = 1/x$ ($x \geq 1$) zavrtimo okoli $x$-osi. 
-		\begin{parts}
-			\part Določite površino Gabrielovega roga.
-			\part Določite prostornino, ki jo zapira Gabrielov rog.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question \emph{Gabrielov rog} (znan tudi kot \emph{Torricellijeva trobenta}) je ploskev, ki jo dobimo, če graf funkcije $f(x) = 1/x$ ($x \geq 1$) zavrtimo okoli $x$-osi. 
+% 		\begin{parts}
+% 			\part Določite površino Gabrielovega roga.
+% 			\part Določite prostornino, ki jo zapira Gabrielov rog.
+% 		\end{parts}
 
-		\question S pomočjo integlalnega računa izpeljite formulo za prostornino in površino piramide, stožca oziroma krogelnega odseka.
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 		\question S pomočjo integlalnega računa izpeljite formulo za prostornino in površino piramide, stožca oziroma krogelnega odseka.
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 10 \\24. in 25. april 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Uporaba integrala v geometriji in fiziki, izlimitirani integral.	
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 10 \\24. in 25. april 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Uporaba integrala v geometriji in fiziki, izlimitirani integral.	
+\section*{Vaje (24. in 25. april 2025)}
 \begin{questions}
 	\question Utemeljite, zakaj so naslednji integrali posplošeni in jih izračunaj, če lahko:
 	\begin{multicols}{2}
@@ -1234,41 +1234,41 @@ Krivulja $K$ je podana parametrično z \[x(t) = 4+2 \ln t \quad y(t) = t + \frac
 Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enačbo $x^{\frac{2}{3}} + y^{\frac{2}{3}} = a^{\frac{2}{3}}$, $a > 0$.
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question \emph{Gabrielov rog} (znan tudi kot \emph{Torricellijeva trobenta}) je ploskev, ki jo dobimo, če graf funkcije $f(x) = 1/x$ ($x \geq 1$) zavrtimo okoli $x$-osi. 
-		\begin{parts}
-			\part Določite površino Gabrielovega roga.
-			\part Določite prostornino, ki jo zapira Gabrielov rog.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question \emph{Gabrielov rog} (znan tudi kot \emph{Torricellijeva trobenta}) je ploskev, ki jo dobimo, če graf funkcije $f(x) = 1/x$ ($x \geq 1$) zavrtimo okoli $x$-osi. 
+% 		\begin{parts}
+% 			\part Določite površino Gabrielovega roga.
+% 			\part Določite prostornino, ki jo zapira Gabrielov rog.
+% 		\end{parts}
 
-		\question S pomočjo integlalnega računa izpeljite formulo za prostornino in površino piramide, stožca oziroma krogelnega odseka.
+% 		\question S pomočjo integlalnega računa izpeljite formulo za prostornino in površino piramide, stožca oziroma krogelnega odseka.
 
-		\question Naj bo $f: [1, \infty) \to \mathbb{R}$ zvezna funkcija, za katero obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{f^{2}(t)}{t^{2}} dt$.
-		\begin{parts}
-			\part Dokažite, da obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{1+ f^{2}(t)}{t^{2}} dt$.
-			\part Dokažite, da obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{|f(t)|}{t^{2}} dt$.
-		\end{parts}
+% 		\question Naj bo $f: [1, \infty) \to \mathbb{R}$ zvezna funkcija, za katero obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{f^{2}(t)}{t^{2}} dt$.
+% 		\begin{parts}
+% 			\part Dokažite, da obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{1+ f^{2}(t)}{t^{2}} dt$.
+% 			\part Dokažite, da obstaja integral $ \displaystyle \int_{1}^{\infty} \frac{|f(t)|}{t^{2}} dt$.
+% 		\end{parts}
 
-		\question Naj bo $f: [0, \infty] \to \mathbb{R}$ zvezna funkcija in $\displaystyle \lim_{x \to \infty} f(x) = c \geq 0$.
-		\begin{parts}
-			\part Dokažite, da za vsak $a \geq 0$ obstaja takšen $b \geq 0$, da je $\displaystyle \int_{0}^{b} f(t)dt = a$.
-			\part Dokažite, da obstaja takšen $M \geq 0$, da je za vsak $a \geq M$ število $b$, ki ustreza pogojem iz prejšnje točke, enolično določeno.
-		\end{parts}
-		\textbf{Nasvet:} upoštevajte funkcio $F(b)= \displaystyle \int_{0}^{b} f(t) dt$
-	\end{questions}
-	\pagestyle{empty}
-% \pagestyle{empty}
-\clearpage
+% 		\question Naj bo $f: [0, \infty] \to \mathbb{R}$ zvezna funkcija in $\displaystyle \lim_{x \to \infty} f(x) = c \geq 0$.
+% 		\begin{parts}
+% 			\part Dokažite, da za vsak $a \geq 0$ obstaja takšen $b \geq 0$, da je $\displaystyle \int_{0}^{b} f(t)dt = a$.
+% 			\part Dokažite, da obstaja takšen $M \geq 0$, da je za vsak $a \geq M$ število $b$, ki ustreza pogojem iz prejšnje točke, enolično določeno.
+% 		\end{parts}
+% 		\textbf{Nasvet:} upoštevajte funkcio $F(b)= \displaystyle \int_{0}^{b} f(t) dt$
+% 	\end{questions}
+% 	\pagestyle{empty}
+% % \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 11 \\8. in 9. maj 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Zaporedje funkcij, vrste funkcij, konvergenca po točkah, enakomerna konverngenca.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 11 \\8. in 9. maj 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Zaporedje funkcij, vrste funkcij, konvergenca po točkah, enakomerna konverngenca.
+\section*{Vaje (8. in 9. maj 2025)}
 \begin{questions}
 
 	\question Dana so naslednja funkcijska zaporedja:
@@ -1309,33 +1309,33 @@ Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enač
 	
 
 
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question Naj bosta $\left\{ f_{n} : D \to \mathbb{R}\right\}$ in $\left\{ g_{n}: D \to \mathbb{R}\right\}$ zaporediji funkcij. Prepostavite, da $\left\{ f_{n}\right\}$ in $\left\{ g_{n}\right\}$ konvergirata enakomerno na $D$.  
-		\begin{parts}
-			\part Dokažite, da je zaporedja funkcij $\left\{ f_{n} + g_{n} \right\}$.
-			\part Dokažite, da če sta $\{f_{n}\}$ in $\{g_{n}\} $ zaporedji omejenih funkcij, potem je zaporedje $\{f_{n}g_{n}\}$ enakomerno konvergira.
-			\part Poiščite zaporedji funkcij $\{f_{n}\}$ in $\{g_{n}\}$, ki enakomerno konvergirata na neki množici $D$, vendar tako $\{f_{n} g_{n}\}$ konvergira po točkah na $D$, vendar ne konvergira enakomerno na $D$.  
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question Naj bosta $\left\{ f_{n} : D \to \mathbb{R}\right\}$ in $\left\{ g_{n}: D \to \mathbb{R}\right\}$ zaporediji funkcij. Prepostavite, da $\left\{ f_{n}\right\}$ in $\left\{ g_{n}\right\}$ konvergirata enakomerno na $D$.  
+% 		\begin{parts}
+% 			\part Dokažite, da je zaporedja funkcij $\left\{ f_{n} + g_{n} \right\}$.
+% 			\part Dokažite, da če sta $\{f_{n}\}$ in $\{g_{n}\} $ zaporedji omejenih funkcij, potem je zaporedje $\{f_{n}g_{n}\}$ enakomerno konvergira.
+% 			\part Poiščite zaporedji funkcij $\{f_{n}\}$ in $\{g_{n}\}$, ki enakomerno konvergirata na neki množici $D$, vendar tako $\{f_{n} g_{n}\}$ konvergira po točkah na $D$, vendar ne konvergira enakomerno na $D$.  
+% 		\end{parts}
 
-		\question 
-		\begin{parts}
-			\part Za $n \in \mathbb{N}$ in $x \in \mathbb{R}$, naj bo \[f_{n}(x) = \frac{x}{1+nx^{2}}.\]  Dokažite, da zaporedja funkcij $\left\{ f_{n} \right\}$ enakomerno konvergira proti funkciji $f$, in da \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] velja, če je $x \neq 0$, pa ne, če je $x=0$.  
-			\part Obstaja izrek, ki pravi, kdaj velja enačba \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] za zaporedje funkcij $\left\{ f_{n} \right\}$. Zakaj ta izrek ne drži v prejšnjem primeru?
-		\end{parts}
+% 		\question 
+% 		\begin{parts}
+% 			\part Za $n \in \mathbb{N}$ in $x \in \mathbb{R}$, naj bo \[f_{n}(x) = \frac{x}{1+nx^{2}}.\]  Dokažite, da zaporedja funkcij $\left\{ f_{n} \right\}$ enakomerno konvergira proti funkciji $f$, in da \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] velja, če je $x \neq 0$, pa ne, če je $x=0$.  
+% 			\part Obstaja izrek, ki pravi, kdaj velja enačba \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] za zaporedje funkcij $\left\{ f_{n} \right\}$. Zakaj ta izrek ne drži v prejšnjem primeru?
+% 		\end{parts}
 
-		\question Dano je zaporedje funkcij $f: [0, \infty) \to \mathbb{R}$, \[f_{n}(x) = \frac{\ln(1+x/n)}{x+1}.\]
-		\begin{parts}
-			\part Dokažite, da zapordje konvergira po točkah na $[0, \infty)$, in določi limitno funkcijo.
-			\part Dokažite, da zaporedje konvergira enakomerno na $[0,a]$ za vsak $a > 0$.
-			\part Ali je konvergenca enakomerna na $[0, \infty]$? Odgovor utemeljite.
-		\end{parts}
+% 		\question Dano je zaporedje funkcij $f: [0, \infty) \to \mathbb{R}$, \[f_{n}(x) = \frac{\ln(1+x/n)}{x+1}.\]
+% 		\begin{parts}
+% 			\part Dokažite, da zapordje konvergira po točkah na $[0, \infty)$, in določi limitno funkcijo.
+% 			\part Dokažite, da zaporedje konvergira enakomerno na $[0,a]$ za vsak $a > 0$.
+% 			\part Ali je konvergenca enakomerna na $[0, \infty]$? Odgovor utemeljite.
+% 		\end{parts}
 
 		
 		
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1343,10 +1343,10 @@ Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enač
 
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 12 \\15. in 16. maj 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Taylorjeve vrste.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 12 \\15. in 16. maj 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Taylorjeve vrste.
+\section*{Vaje (15. in 16. maj 2025)}
 \begin{questions}
 		\question Naslednje funkcije razvijte v Taylorjeve vrste okoli točke $x = a$, določite območja konvergence dobljenih vrst in izračunajte $f^{(2024)}(a)$ in $f^{(2025)}(a)$:
 		\begin{parts}
@@ -1398,44 +1398,44 @@ Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enač
 \end{multicols}
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question 
-		\begin{parts}
-			\part Za $n \in \mathbb{N}$ in $x \in \mathbb{R}$, naj bo \[f_{n}(x) = \frac{x}{1+nx^{2}}.\]  Dokažite, da zaporedja funkcij $\left\{ f_{n} \right\}$ enakomerno konvergira proti funkciji $f$, in da \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] velja, če je $x \neq 0$, pa ne, če je $x=0$.  
-			\part Obstaja izrek, ki pravi, kdaj velja enačba \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] za zaporedje funkcij $\left\{ f_{n} \right\}$. Zakaj ta izrek ne drži v prejšnjem primeru?
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question 
+% 		\begin{parts}
+% 			\part Za $n \in \mathbb{N}$ in $x \in \mathbb{R}$, naj bo \[f_{n}(x) = \frac{x}{1+nx^{2}}.\]  Dokažite, da zaporedja funkcij $\left\{ f_{n} \right\}$ enakomerno konvergira proti funkciji $f$, in da \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] velja, če je $x \neq 0$, pa ne, če je $x=0$.  
+% 			\part Obstaja izrek, ki pravi, kdaj velja enačba \[f'(x) = \lim_{n \to \infty} f_{n}'(x)\] za zaporedje funkcij $\left\{ f_{n} \right\}$. Zakaj ta izrek ne drži v prejšnjem primeru?
+% 		\end{parts}
 
-		\question Dano je zaporedje funkcij $f: [0, \infty) \to \mathbb{R}$, \[f_{n}(x) = \frac{\ln(1+x/n)}{x+1}.\]
-		\begin{parts}
-			\part Dokažite, da zapordje konvergira po točkah na $[0, \infty)$, in določi limitno funkcijo.
-			\part Dokažite, da zaporedje konvergira enakomerno na $[0,a]$ za vsak $a > 0$.
-			\part Ali je konvergenca enakomerna na $[0, \infty]$? Odgovor utemeljite.
-		\end{parts}
+% 		\question Dano je zaporedje funkcij $f: [0, \infty) \to \mathbb{R}$, \[f_{n}(x) = \frac{\ln(1+x/n)}{x+1}.\]
+% 		\begin{parts}
+% 			\part Dokažite, da zapordje konvergira po točkah na $[0, \infty)$, in določi limitno funkcijo.
+% 			\part Dokažite, da zaporedje konvergira enakomerno na $[0,a]$ za vsak $a > 0$.
+% 			\part Ali je konvergenca enakomerna na $[0, \infty]$? Odgovor utemeljite.
+% 		\end{parts}
 
-		\question
-		Določite $a,b,c,d \in \mathbb{R}$, da bo obstajala (končna) limita 
-		\[L = \lim_{x \to 0} \frac{1}{x^{5}}\left( e^{x} - \frac{1+ ax +bx^{2}}{1+cx+dx^{2}} \right)\]
+% 		\question
+% 		Določite $a,b,c,d \in \mathbb{R}$, da bo obstajala (končna) limita 
+% 		\[L = \lim_{x \to 0} \frac{1}{x^{5}}\left( e^{x} - \frac{1+ ax +bx^{2}}{1+cx+dx^{2}} \right)\]
 
-		\question
-		Dokažite, da je število $e$ iracionalno. To storite tako
-		\begin{parts}
-			\part Predpostavite, da lahko $e$ zapišemo kot ulomek $\frac{a}{b}$, kjer sta $a,b$ naravni števili.
-			\part Izberite $n > \max \left\{ 3,b \right\}$ in s pomočjo Taylorjeve vrste, izračunajte približek $e = e^1$ (do $n$-tega reda). Dokažite, da je za napako $R_n$ tega približka $0 < R_{n} < \frac{3}{(n+1)!}$.
-			\part Zgornji dve točki uporabite za ugotovitev nasprotja s predpostavko $e=\frac{a}{b}$.
-		\end{parts}
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 		\question
+% 		Dokažite, da je število $e$ iracionalno. To storite tako
+% 		\begin{parts}
+% 			\part Predpostavite, da lahko $e$ zapišemo kot ulomek $\frac{a}{b}$, kjer sta $a,b$ naravni števili.
+% 			\part Izberite $n > \max \left\{ 3,b \right\}$ in s pomočjo Taylorjeve vrste, izračunajte približek $e = e^1$ (do $n$-tega reda). Dokažite, da je za napako $R_n$ tega približka $0 < R_{n} < \frac{3}{(n+1)!}$.
+% 			\part Zgornji dve točki uporabite za ugotovitev nasprotja s predpostavko $e=\frac{a}{b}$.
+% 		\end{parts}
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 13 \\22. in 23. maj 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:} Metrični prostori.	
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 13 \\22. in 23. maj 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:} Metrični prostori.	
+\section*{Vaje (22. in 23. maj 2025)}
 
 \begin{questions}
 
@@ -1521,40 +1521,40 @@ Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enač
 
 
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question Naj bo $X$ poljubna neprazna množica. Označimo z $X^{\mathbb{N}}$ množico vseh zaporedij  $(x_{1}, x_{2}, \dots)$ točk iz $X$. Definirajmo razdaljo $d(x,y)$ dveh elementov $x=(x_{1}, x_{2}, \dots)$ in $y=(y_{1}, y_{2}, \dots)$ te množice takole: \[d(x,y) = \begin{cases} 0, & \text{če je } x=y;  \\ \frac{1}{n} & \text{če veljajo } x_{1}=y_{1}, x_{2}= y_{2}, \dots, x_{n-1} = y_{n-1}, \text{ in } x_{n} \neq y_{n}. \end{cases}\]
-		\begin{parts}
-			\part Dokažite, da res je $d$ metrika na množici $M$.
-			\part Pokažite, da ima ta prostor tole čudno lastnost: vsaka točka poljubne (odprte ali zaprte) krogle je središče te krogle; poleg tega sta vsaki dve krogli bodisi disjunktni ali pa ena od njiju vsebuje drugo.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question Naj bo $X$ poljubna neprazna množica. Označimo z $X^{\mathbb{N}}$ množico vseh zaporedij  $(x_{1}, x_{2}, \dots)$ točk iz $X$. Definirajmo razdaljo $d(x,y)$ dveh elementov $x=(x_{1}, x_{2}, \dots)$ in $y=(y_{1}, y_{2}, \dots)$ te množice takole: \[d(x,y) = \begin{cases} 0, & \text{če je } x=y;  \\ \frac{1}{n} & \text{če veljajo } x_{1}=y_{1}, x_{2}= y_{2}, \dots, x_{n-1} = y_{n-1}, \text{ in } x_{n} \neq y_{n}. \end{cases}\]
+% 		\begin{parts}
+% 			\part Dokažite, da res je $d$ metrika na množici $M$.
+% 			\part Pokažite, da ima ta prostor tole čudno lastnost: vsaka točka poljubne (odprte ali zaprte) krogle je središče te krogle; poleg tega sta vsaki dve krogli bodisi disjunktni ali pa ena od njiju vsebuje drugo.
+% 		\end{parts}
 
-		\question Naj bo $M=\mathbb{R}[x]$ množica polinomov s koeficienti na realmi števili. Vsak element $p \in \mathbb{R}[x]$ zapišite kot $p = \sum_{i=0}^{\infty} \alpha_i x^{i}$, kjer so vsi koeficienti $\alpha_{i}$, raze knočnega števila, enaki nič. (npr. če je $p = 3x^{3} - 2x +1$,nato $\alpha_{0} = 1$, $\alpha_{1} =- 2$, $\alpha_{2} = 0$, $\alpha_{3} = 3$ in $\alpha_{i} = 0 $ če je $i \geq 4$). Definirajmo razdaljo $d \left( p(x), q(x) \right)$ dveh elementov $p(x) = \sum_{i=0}^{\infty} \alpha_{i} x^{i}$  $p(x) = \sum_{i=0}^{\infty} \beta_{i} x^{i}$ množice $\mathbb{R}[x]$ takole: \[d \left( p(x), q(x) \right) = \sup \left\{ \left| \alpha_{i} - \beta_{i} \right| : 0 \leq i < \infty \right\}.\]
+% 		\question Naj bo $M=\mathbb{R}[x]$ množica polinomov s koeficienti na realmi števili. Vsak element $p \in \mathbb{R}[x]$ zapišite kot $p = \sum_{i=0}^{\infty} \alpha_i x^{i}$, kjer so vsi koeficienti $\alpha_{i}$, raze knočnega števila, enaki nič. (npr. če je $p = 3x^{3} - 2x +1$,nato $\alpha_{0} = 1$, $\alpha_{1} =- 2$, $\alpha_{2} = 0$, $\alpha_{3} = 3$ in $\alpha_{i} = 0 $ če je $i \geq 4$). Definirajmo razdaljo $d \left( p(x), q(x) \right)$ dveh elementov $p(x) = \sum_{i=0}^{\infty} \alpha_{i} x^{i}$  $p(x) = \sum_{i=0}^{\infty} \beta_{i} x^{i}$ množice $\mathbb{R}[x]$ takole: \[d \left( p(x), q(x) \right) = \sup \left\{ \left| \alpha_{i} - \beta_{i} \right| : 0 \leq i < \infty \right\}.\]
 		
-		Dokažite, da je $d$ metrika na množici $\mathbb{R}[x]$ (pazite!, morate dokazati da je $d \left( p(x), q(x) \right)$ realno število za vsak $p(x), q(x) \in \mathbb{R}[x]$).
+% 		Dokažite, da je $d$ metrika na množici $\mathbb{R}[x]$ (pazite!, morate dokazati da je $d \left( p(x), q(x) \right)$ realno število za vsak $p(x), q(x) \in \mathbb{R}[x]$).
 
-		\question Naj bo $p$ praštevilo. Vsako nenicelno racionalno število $x$ lahko enolično zapišemo kot $x = p^k \frac{r}{s}$, kjer sta $k \in \mathbb{Z}$, $r \in \mathbb{Z}$ in $s \in \mathbb{N}$, pri čemer $p$ ne deli $r$ in $p$ ne deli $s$. Definiramo $|x|_p = p^{-k}$, in še $|0|_p = 0$.
+% 		\question Naj bo $p$ praštevilo. Vsako nenicelno racionalno število $x$ lahko enolično zapišemo kot $x = p^k \frac{r}{s}$, kjer sta $k \in \mathbb{Z}$, $r \in \mathbb{Z}$ in $s \in \mathbb{N}$, pri čemer $p$ ne deli $r$ in $p$ ne deli $s$. Definiramo $|x|_p = p^{-k}$, in še $|0|_p = 0$.
 
-		Definiramo funkcija $d_{p}: \mathbb{Q} \times \mathbb{Q}\to \mathbb{R}$ kot $d_{p}(x,y) \mapsto |x - y|_p$. 
-		Dokažite da je $d_{p}$ metrika na množici racionalnih števil. 
-		% To je očitno nenegativna simetrična funkcija, ki je enaka $0$ natanko tedaj, ko je $a = b$. Trikotniško neenakost lahko preverimo na sledeč način: če je $|a - c|_p = p^{-m}$ in $|c - b|_p = p^{-n}$, potem velja
-			% \[
-			% |a - b|_p \leq \max\{p^{-m}, p^{-n}\}.
-			% \]
+% 		Definiramo funkcija $d_{p}: \mathbb{Q} \times \mathbb{Q}\to \mathbb{R}$ kot $d_{p}(x,y) \mapsto |x - y|_p$. 
+% 		Dokažite da je $d_{p}$ metrika na množici racionalnih števil. 
+% 		% To je očitno nenegativna simetrična funkcija, ki je enaka $0$ natanko tedaj, ko je $a = b$. Trikotniško neenakost lahko preverimo na sledeč način: če je $|a - c|_p = p^{-m}$ in $|c - b|_p = p^{-n}$, potem velja
+% 			% \[
+% 			% |a - b|_p \leq \max\{p^{-m}, p^{-n}\}.
+% 			% \]
 
 
-	\end{questions}
-\pagestyle{empty}
-\clearpage
+% 	\end{questions}
+% \pagestyle{empty}
+% \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 14 \\29. in 30. maj 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:}	Metrični prostor, oprte množice, zaprte množice.
-\section*{Vaje}
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 14 \\29. in 30. maj 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:}	Metrični prostor, oprte množice, zaprte množice.
+\section*{Vaje (29. in 30. maj 2025)}
 \begin{questions}
 	\question Naj bodo $d_{1}$, $d_{2}$ in $d_{\infty}$ metrike na množici $\mathbb{R}^{2}$ definirane s predpisi
 		\begin{align*}
@@ -1620,45 +1620,45 @@ Izračunajte obseg in ploščino astroide. Astroida je podana implicitno z enač
 	\end{parts}
 		
 \end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question Naj bo $X$ poljubna neprazna množica. Označimo z $X^{\mathbb{N}}$ množico vseh zaporedij  $(x_{1}, x_{2}, \dots)$ točk iz $X$. Definirajmo razdaljo $d(x,y)$ dveh elementov $x=(x_{1}, x_{2}, \dots)$ in $y=(y_{1}, y_{2}, \dots)$ te množice takole: \[d(x,y) = \begin{cases} 0, & \text{če je } x=y;  \\ \frac{1}{n} & \text{če veljajo } x_{1}=y_{1}, x_{2}= y_{2}, \dots, x_{n-1} = y_{n-1}, \text{ in } x_{n} \neq y_{n}. \end{cases}\]
-		\begin{parts}
-			\part Dokažite, da res je $d$ metrika na množici $M$.
-			\part Pokažite, da ima ta prostor tole čudno lastnost: vsaka točka poljubne (odprte ali zaprte) krogle je središče te krogle; poleg tega sta vsaki dve krogli bodisi disjunktni ali pa ena od njiju vsebuje drugo.
-		\end{parts}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question Naj bo $X$ poljubna neprazna množica. Označimo z $X^{\mathbb{N}}$ množico vseh zaporedij  $(x_{1}, x_{2}, \dots)$ točk iz $X$. Definirajmo razdaljo $d(x,y)$ dveh elementov $x=(x_{1}, x_{2}, \dots)$ in $y=(y_{1}, y_{2}, \dots)$ te množice takole: \[d(x,y) = \begin{cases} 0, & \text{če je } x=y;  \\ \frac{1}{n} & \text{če veljajo } x_{1}=y_{1}, x_{2}= y_{2}, \dots, x_{n-1} = y_{n-1}, \text{ in } x_{n} \neq y_{n}. \end{cases}\]
+% 		\begin{parts}
+% 			\part Dokažite, da res je $d$ metrika na množici $M$.
+% 			\part Pokažite, da ima ta prostor tole čudno lastnost: vsaka točka poljubne (odprte ali zaprte) krogle je središče te krogle; poleg tega sta vsaki dve krogli bodisi disjunktni ali pa ena od njiju vsebuje drugo.
+% 		\end{parts}
 
-		\question Naj bo $M=\mathbb{R}[x]$ množica polinomov s koeficienti na realmi števili. Vsak element $p \in \mathbb{R}[x]$ zapišite kot $p = \sum_{i=0}^{\infty} \alpha_i x^{i}$, kjer so vsi koeficienti $\alpha_{i}$, raze knočnega števila, enaki nič. (npr. če je $p = 3x^{3} - 2x +1$,nato $\alpha_{0} = 1$, $\alpha_{1} =- 2$, $\alpha_{2} = 0$, $\alpha_{3} = 3$ in $\alpha_{i} = 0 $ če je $i \geq 4$). Definirajmo razdaljo $d \left( p(x), q(x) \right)$ dveh elementov $p(x) = \sum_{i=0}^{\infty} \alpha_{i} x^{i}$  $p(x) = \sum_{i=0}^{\infty} \beta_{i} x^{i}$ množice $\mathbb{R}[x]$ takole: \[d \left( p(x), q(x) \right) = \sup \left\{ \left| \alpha_{i} - \beta_{i} \right| : 0 \leq i < \infty \right\}.\]
+% 		\question Naj bo $M=\mathbb{R}[x]$ množica polinomov s koeficienti na realmi števili. Vsak element $p \in \mathbb{R}[x]$ zapišite kot $p = \sum_{i=0}^{\infty} \alpha_i x^{i}$, kjer so vsi koeficienti $\alpha_{i}$, raze knočnega števila, enaki nič. (npr. če je $p = 3x^{3} - 2x +1$,nato $\alpha_{0} = 1$, $\alpha_{1} =- 2$, $\alpha_{2} = 0$, $\alpha_{3} = 3$ in $\alpha_{i} = 0 $ če je $i \geq 4$). Definirajmo razdaljo $d \left( p(x), q(x) \right)$ dveh elementov $p(x) = \sum_{i=0}^{\infty} \alpha_{i} x^{i}$  $p(x) = \sum_{i=0}^{\infty} \beta_{i} x^{i}$ množice $\mathbb{R}[x]$ takole: \[d \left( p(x), q(x) \right) = \sup \left\{ \left| \alpha_{i} - \beta_{i} \right| : 0 \leq i < \infty \right\}.\]
 		
-		Dokažite, da je $d$ metrika na množici $\mathbb{R}[x]$ (pazite!, morate dokazati da je $d \left( p(x), q(x) \right)$ realno število za vsak $p(x), q(x) \in \mathbb{R}[x]$).
+% 		Dokažite, da je $d$ metrika na množici $\mathbb{R}[x]$ (pazite!, morate dokazati da je $d \left( p(x), q(x) \right)$ realno število za vsak $p(x), q(x) \in \mathbb{R}[x]$).
 
-		\question Naj bo $p$ praštevilo. Vsako nenicelno racionalno število $x$ lahko enolično zapišemo kot $x = p^k \frac{r}{s}$, kjer sta $k \in \mathbb{Z}$, $r \in \mathbb{Z}$ in $s \in \mathbb{N}$, pri čemer $p$ ne deli $r$ in $p$ ne deli $s$. Definiramo $|x|_p = p^{-k}$, in še $|0|_p = 0$.
-		\begin{parts}
-			\part Definiramo funkcija $d_{p}: \mathbb{Q} \times \mathbb{Q}\to \mathbb{R}$ kot $d_{p}(x,y) \mapsto |x - y|_p$. 
-			\part Skicirajte odprto kroglo $K(1,5)$  za metriki $d_{2}$ in $d_{3}$.
-		\end{parts}
+% 		\question Naj bo $p$ praštevilo. Vsako nenicelno racionalno število $x$ lahko enolično zapišemo kot $x = p^k \frac{r}{s}$, kjer sta $k \in \mathbb{Z}$, $r \in \mathbb{Z}$ in $s \in \mathbb{N}$, pri čemer $p$ ne deli $r$ in $p$ ne deli $s$. Definiramo $|x|_p = p^{-k}$, in še $|0|_p = 0$.
+% 		\begin{parts}
+% 			\part Definiramo funkcija $d_{p}: \mathbb{Q} \times \mathbb{Q}\to \mathbb{R}$ kot $d_{p}(x,y) \mapsto |x - y|_p$. 
+% 			\part Skicirajte odprto kroglo $K(1,5)$  za metriki $d_{2}$ in $d_{3}$.
+% 		\end{parts}
 		
-		\question Metriki $d$ in $d'$ na množici $M$ sta \emph{ekvivalenti}, če je podmnožica $A \subset M$ odprta z metriko $d$ natanko takrat, ko je odprta z metriko $d'$.
-		Pokažite, da so metrike $d_{1}$, $d_{2}$ in $d_{3}$ na množici $\mathbb{R}^{2}$ parno ekvivalentne. 
+% 		\question Metriki $d$ in $d'$ na množici $M$ sta \emph{ekvivalenti}, če je podmnožica $A \subset M$ odprta z metriko $d$ natanko takrat, ko je odprta z metriko $d'$.
+% 		Pokažite, da so metrike $d_{1}$, $d_{2}$ in $d_{3}$ na množici $\mathbb{R}^{2}$ parno ekvivalentne. 
 
-	\end{questions}
-\pagestyle{empty}
-\clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 15 \\5. in 6. junij 2025}
-\pagestyle{head}
-\paragraph{Ključni pojmi:}	
-\section*{Vaje}
-\begin{questions}
-	\question 
-\end{questions}
-\section*{Seminar (predstavitve)}
-	\begin{questions}
-		\question
-	\end{questions}
+% 	\end{questions}
 % \pagestyle{empty}
-\clearpage
+% \clearpage
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ Vaje 15 \\5. in 6. junij 2025}
+% \pagestyle{head}
+% \paragraph{Ključni pojmi:}	
+% \section*{Vaje}
+% \begin{questions}
+% 	\question 
+% \end{questions}
+% \section*{Seminar (predstavitve)}
+% 	\begin{questions}
+% 		\question
+% 	\end{questions}
+% % \pagestyle{empty}
+% \clearpage
 
 \end{document}

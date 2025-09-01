@@ -1,0 +1,229 @@
+\documentclass[11pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts} %ams packages
+\usepackage{graphicx, color} %grphics
+\usepackage{enumitem} %personalized lists 
+\usepackage[top=3.5cm, bottom=2cm, left=2cm, right=2cm, headsep = 3pt, footskip=2pt]{geometry} %pagelayout
+\usepackage{multirow,multicol} %to use multirow on tables
+\usepackage{tabularx}
+\usepackage{array} %bmatrix and similar stuff
+% \usepackage{hyperref}
+\usepackage[slovene]{babel}
+
+\usepackage{multicol}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%personalized commands to make latex look better (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\leq}{\leqslant} %menores y mayores iguales decentes
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\subset}{\subseteq} 
+\renewcommand{\supset}{\supseteq} 
+\renewcommand{\subsetneq}{\varsubsetneq}
+\renewcommand{\{}{\lbrace}
+\renewcommand{\}}{\rbrace}
+\newcommand{\sm}{\setminus} %setminus corto
+
+%\renewcommand{\bar}{\overline}
+%\renewcommand{\hat}{\widehat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%exam class commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{head}
+% \chead{ Matematična analiza 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\ Vaje 1 \\17. februar 2025} %self-explanatory
+% \runningheader{}{ Abstraktna algebra 2024/2025 \\ Univerza v Ljublani, Pedagoška fakulteta \\2. Kolokvij \\20. januar 2025}{} %self-explanatory
+% \runningheader{}{}{}
+% \footer{}{}{}
+% \firstpagefooter{MATH 1190 3.0 M  }{Page \thepage\ of \numpages}{Copyright 2020 \textcopyright Antonio Montero}
+% \firstpagefooter{}{}{}
+% \runningfooter{MATH 1190 3.0 M }{Page \thepage\ of \numpages}{Copyright 2020 \textcopyright Antonio Montero}
+% \firstpagefootrule 
+% \runningfootrule
+
+%%Solutions
+\unframedsolutions
+% \printanswers
+\SolutionEmphasis{\itshape}
+
+
+%Personalized commands
+\pointpoints{točka}{točk}
+\bonuspointpoints{točka}{dodatnih točk}
+% \gradetable[h][questions]
+\addpoints
+\hqword{Naloga}
+% \vpgword{text}
+\hpword{Točke}
+% \hsword{}
+% \hbpword{}
+\htword{Skupaj}
+
+% \pointsinrightmargin
+% \extrawidth{-2cm}
+\marginpointname{ \points}
+
+
+\chqword{Naloga}
+\chpgword{Stran}
+\chpword{točke}
+% \chbpword{Puntos extra}
+% \chsword{Puntos obtenidos
+\chtword{Skupaj}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \graphicspath{{../img/}} %Uso: \graphicspath{{RelativePath}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Personalized commands
+
+%Personalized commands
+
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+
+\newcolumntype{\cc}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{\rr}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\newcolumntype{\ll}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
+
+\newcommand{\TT}{\mathbf{T}}
+\newcommand{\FF}{\mathbf{F}}
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+\let\th\relax
+\DeclareMathOperator{\th}{th}
+\DeclareMathOperator{\arsh}{arsh}
+\DeclareMathOperator{\arch}{arch}
+\DeclareMathOperator{\arth}{arth}
+\DeclareMathOperator{\arctg}{arctg}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\newif\ifmarking
+% 		\markingtrue %comment to hide marking suggestions
+
+		\newenvironment{marking}
+		{\hrulefill
+		 
+		\textbf{Marking suggestions:} 
+		\ttfamily }
+		{\hrulefill }
+
+\allowdisplaybreaks
+
+% \renewcommand{\thepartno}{\roman{partno}}
+\renewcommand{\partlabel}{(\textit{\thepartno})}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ 1. Kolokvij \\17. junij 2025}
+% \footer{}{}{}
+
+% \vspace{1 cm}
+
+\pagestyle{head}
+	
+
+	
+\begin{questions}
+	\question Dana je funkcija $f: [0,2] \to \mathbb{R}$ s predpisom \[f(x) = \begin{cases}
+    x^2 & \text{če je } x \in [0, 1) \\
+    3-x & \text{če je } x \in [1, 2]
+  \end{cases}\]
+  \begin{parts}
+    \part[10] Izračunajte zgornjo in spodnjo Riemannovo (oz. Darbouxjevo) vsoto funkcije $f$ na intervalu $[0, 2]$ glede na delitev $\mathcal{D}: 0 < \frac{1}{5} < \frac{3}{5} < 1 <  \frac{6}{5} < \frac{9}{5} < 2$.
+    \part[15] Izračunajte zgornjo in spodnjo Riemannovo (oz. Darbouxjevo) vsoto funkcije $f$ na intervalu $[0, 2]$ glede na delitev $\mathcal{D}_{n}: 0 < \frac{1}{n} < \frac{2}{n} < \cdots <  \frac{2n-1}{n} < 2$. Torej, po definiciji, izračunajte integral $\displaystyle \int_{0}^{2} f(x) \, dx$.
+  \end{parts}
+  \textbf{Nasvet:} Ne pozabite, za poljubno naravno število $n$ velja, $\sum_{i=0}^{n} i^{2} = \frac{n(n+1)(2n+1)}{6}$. To ne morate dokazovati (bonus, če dokažete), ampak ga lahko uporabite pri izračunu zgornje in spodnje Darbouxjeve vsote.
+	
+  % \vspace{1 cm}
+
+
+
+	\question Dano je zaporedje funkcij $f_n = x^n$ za vsak $n \in \mathbb{N}$.
+  \begin{parts}
+    \part[5] Dokažite, da zaporedje $\{f_n\}$ konvergira po točkah na intervalu $[0, 1]$ in določite njegovo limitno funkcijo.
+    \part[10] Dokažite, da je zaporedje $\left\{ f_n \right\}$ enakomerno konvergira na intervalu $\left[0, \frac{99}{100}\right]$.
+    \part[10] Dokažite, da zaporedje $\{f_n\}$ ni enakomerno konvergentno na intervalu $[0, 1]$.
+  \end{parts} 
+
+  % \vspace{1cm}
+
+\question Dani sta funkciji $f(x) = e^{x^{2}}$ in $g(x) = \cos(x)$.
+  \begin{parts}
+    \part[15] Izračunajte Taylorjeve razvoja funkcij $f$ in $g$ okoli točke $a=0$.
+    \part[10] S pomočjo Taylorjevih razvojov funkcij $f$ in $g$, izračunajte naslednjo limito: \[\lim_{x \to 0} \frac{e^{x^{2}} -1}{1 - \cos(x)}.\]
+  \end{parts}
+
+	% \vspace{1cm}
+	
+  \question Podana je preslikava $d: \mathbb{R}^{2} \times \mathbb{R}^{2} \to \mathbb{R}$ s predpisom
+  \[d((x_1, y_1), (x_2, y_2)) = \sqrt{|x_{1} - x_{2}|} + \sqrt{|y_{1} - y_{2}|}\]
+  \begin{parts}
+    \part[10] Dokažite, da je $d$ metrika na $\mathbb{R}^{2}$.
+    \part[10] Skicirajte odprto kroglo $K_{d}((0, 0), 1)$ s polmerom $r = 1$ okoli točke $(0, 0)$ v metričnem prostoru $(\mathbb{R}^{2}, d)$.
+    \part[5] Naj bosta $(u,v) \in \mathbb{R}^{2}$ in $T_{(u,v)}: \mathbb{R}^{2} \to \mathbb{R}^{2}$ funkcija s predpisom \[T_{(u,v)}(x,y) = (x+u,y+v).\]
+    Dokažite, da je $T_{(1,2)}$ \emph{izometrija}, to pomeni, da ohranja razdalje, torej \[d(T_{(u,v)}(x_1,y_1), T_{(u,v)}(x_2,y_2)) = d((x_1,y_1), (x_2,y_2))\] za vse $(x_1,y_1), (x_2,y_2) \in \mathbb{R}^{2}$.
+    \bonuspart[5] Dokažite, da je $T_{(u,v)}$ izometrija za poljubno $(u,v) \in \mathbb{R}^{2}$.
+    \bonuspart[5] Naj bo $d_{2}$ evklidska metrika na $\mathbb{R}^{2}$ in naj bo $K_{2}((0,0),r)$ odprto evklidsko kroglo polmera $r$, in sicer, \[K_{2}((0,0),r) = \{(x,y) \in \mathbb{R}^{2} \mid \sqrt{x^2 + y^2} < r \}.\] 
+    Dokažite, da obstajata konstanti $A, B > 0$ tako, da 
+    \[\begin{aligned}
+      K_{2}\left((0, 0), \frac{r}{A}\right) &\subseteq K_{d}((0, 0), r) &&\text{in} \\ K_{d}((0, 0), r) &\subseteq K_{2}((0, 0), r*B).
+    \end{aligned} \]
+    % \part[3] Dokažite da je podmnožica $A \subset \mathbb{R}^{2}$ odprta (oz. zaprta) v metričnem prostoru $(\mathbb{R}^{2}, d)$, če in samo če je odprta (oz. zaprta) v evklidskem metričnem prostoru $(\mathbb{R}^{2}, d_{2})$.
+    \end{parts}
+    % \textbf{Opombe:} Za rešitev katere koli točke te vaje lahko uporabite katero koli prejšnjo, tudi če je niste rešili.
+\end{questions}
+
+\clearpage
+
+\chead{Matematična analiza 2024/2025 \\ Univerza v Ljubljani, Pedagoška fakulteta \\ 1. Izpit \\17. junij 2025}
+
+\begin{questions}
+\question Podana je funkcija \[f(x) = \frac{e^{x}}{e^{2x}+1}\]
+\begin{parts}
+  \part[12] Dokažite da je $f$ soda in s pomočjo odvoda skiciraj njen graf.
+  \part[12] Izračunajte volumen vrtenine, ki nastane pri vrtenju grafa funkcije $f$ okoli osi $x$. 
+\end{parts}
+
+\question[26] Iz kroga z radijem $1$ izrežemo izsek in preostanek zvijemo v stožec. Kolikšen naj bo kot izseka, da bo imel dobljeni stožec največji prostornino?
+
+\question Izračunajte naslednje integrale
+	\begin{parts}
+		% \part[6] $\displaystyle \int \frac{x^2}{(1 + x^3)^2} \, dx$,
+		\part[6] $\displaystyle \int \frac{3x + 5}{x^{3} - x^{2} +x -1 } \, dx$,
+		\part[6] $\displaystyle  \int x \ln(1 + x^2) \, dx$.
+
+	\end{parts}
+
+
+  \question Dano je zaporedje funkcij $f_n = x^n$ za vsak $n \in \mathbb{N}$.
+  \begin{parts}
+    \part[6] Dokažite, da zaporedje $\{f_n\}$ konvergira po točkah na intervalu $[0, 1]$ in določite njegovo limitno funkcijo.
+    \part[6] Dokažite, da je zaporedje $\left\{ f_n \right\}$ enakomerno konvergira na intervalu $\left[0, \frac{99}{100}\right]$.
+    \part[6] Dokažite, da zaporedje $\{f_n\}$ ni enakomerno konvergentno na intervalu $[0, 1]$.
+  \end{parts} 
+
+  % \vspace{1cm}
+
+\question Dani sta funkciji $f(x) = e^{x^{2}}$ in $g(x) = \cos(x)$.
+  \begin{parts}
+    \part[10] Izračunajte Taylorjeve razvoja funkcij $f$ in $g$ okoli točke $a=0$.
+    \bonuspart[10] S pomočjo Taylorjevih razvojov funkcij $f$ in $g$, izračunajte naslednji limit: \[\lim_{x \to 0} \frac{e^{x^{2}} -1}{1 - \cos(x)}.\]
+  \end{parts}
+
+\question Podana je preslikava $d: \mathbb{R}^{2} \times \mathbb{R}^{2} \to \mathbb{R}$ s predpisom
+  \[d((x_1, y_1), (x_2, y_2)) = \sqrt{|x_{1} - x_{2}|} + \sqrt{|y_{1} - y_{2}|}\]
+  \begin{parts}
+    \part[5] Dokažite, da je $d$ metrika na $\mathbb{R}^{2}$.
+    \part[5] Skicirajte odprto kroglo $K_{d}((0, 0), 1)$ s polmerom $r = 1$ okoli točke $(0, 0)$ v metričnem prostoru $(\mathbb{R}^{2}, d)$.
+    \bonuspart[5] Naj bosta $(u,v) \in \mathbb{R}^{2}$ in $T_{(u,v)}: \mathbb{R}^{2} \to \mathbb{R}^{2}$ funkcija s predpisom \[T_{(u,v)}(x,y) = (x+u,y+v).\]
+    Dokažite, da je $T_{(1,2)}$ \emph{izometrija}, to pomeni, da ohranja razdalje, torej \[d(T_{(u,v)}(x_1,y_1), T_{(u,v)}(x_2,y_2)) = d((x_1,y_1), (x_2,y_2))\] za vse $(x_1,y_1), (x_2,y_2) \in \mathbb{R}^{2}$.
+  \end{parts}
+\end{questions}
+\end{document}
