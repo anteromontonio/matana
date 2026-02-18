@@ -9,6 +9,7 @@ project:
       website: https://anteromontonio.github.io
   copyright: "2026"
   license: CC-BY-NC-SA-4.0
+  # numbering: {headinxg_1: false, heading_2: true} 
   # description:
   # keywords: []
   # authors: []
@@ -20,17 +21,23 @@ project:
     - title: Vaje po datumih
       children:
         - file: 01.md
+        - file: 02.md
+        - file: 03.md
+        - file: 04.md
     - title: Vaje po temah
       children:
         - file: 01_odvod.md
+        - file: 02_integral.md
 site:
   template: book-theme
   options:
     hide_toc: false
     language: sl
-    logo: calculus_icon1.png
+    logo: matana_icon1.png
+    logo_text: "Matematična analiza - seminar"
     favicon: calculus_icon1.png
     edit_link: null
+    
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png

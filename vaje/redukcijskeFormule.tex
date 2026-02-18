@@ -1,0 +1,46 @@
+\textbf{Predstavil:}
+
+\begin{enumerate}
+
+\item Naj bo $n$ naravno število.
+Z integracijo `po delih' (per partes) pokažite, da velja
+    
+\[
+\int x^n e^{ax} \,dx = \frac{x^n e^{ax}}{a} - \frac{n}{a} \int x^{n-1} e^{ax} \,dx, \quad a \neq 0.
+\]
+    
+\item Pokažite, da velja
+    \[
+    \int (\ln x)^n \,dx = x (\ln x)^n - n \int (\ln x)^{n-1} \,dx. 
+		\]
+    
+\item S pomočjo zgornjih formul izračunajte naslednje integrale:
+		% \begin{multicols}{2}
+			\begin{itemize}
+				\item $\int x^3 e^{2x} \,dx.$ 
+				\item $\int x^2 e^{-x} \,dx.$ 
+				\item $\int (\ln x)^3 \,dx.$ 
+				\item $\int (\ln x)^4 \,dx.$ 
+			\end{itemize}
+		% \end{multicols}	
+    
+\item Kot lahko vidite, če bi integrirali  $\int x^3 e^x \,dx$  z integracijo per partes, bi bil rezultat oblike
+		\[
+    \int x^3 e^x \,dx = A x^3 e^x + B x^2 e^x + C x e^x + D e^x + E.  
+		\]
+    
+   Odvajajte obe strani te enačbe in izračunajte koeficiente  $A, B, C, D$. Na ta način lahko izračunate integral, ne da bi dejansko izvedli integracijo.
+    
+\item Dokažite, da če je  $P(x)$  polinom stopnje  $k$ , potem velja
+		\[
+    \int P(x) e^x \,dx = [P(x) - P'(x) + \dots \pm P^{(k)}(x)] e^x + C.
+		\]
+    
+    \textbf{Namig}: Uporabite lahko podobno idejo kot pri (d)
+    
+\item Izračunajte naslednje integrale
+	\begin{itemize}    
+     \item $\int (x^2 - 3x + 1)e^x \,dx.$ 
+     \item $\int (x^3 - 2x)e^x \,dx.$
+  \end{itemize}
+\end{enumerate}
