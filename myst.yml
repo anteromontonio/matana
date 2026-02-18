@@ -28,7 +28,7 @@ site:
   options:
     hide_toc: false
     language: sl
-    logo: matana.png
+    logo: calculus_icon1.png
     favicon: calculus_icon1.png
     edit_link: null
   # options:
