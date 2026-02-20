@@ -24,6 +24,7 @@ project:
         - file: 02.md
         - file: 03.md
         - file: 04.md
+        - file: 05.md
     - title: Vaje po temah
       children:
         - file: 01_odvod.md
