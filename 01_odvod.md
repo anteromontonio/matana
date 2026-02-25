@@ -69,6 +69,12 @@ math:
 ```
 
 ---
+(neNarascajoca_pt)=
+## Ne naraščajoča funkcija
+```{include} vaje/neNarascajoca.tex
+```
+
+---
 
 (parametricneKrivulje_pt)=
 ## Parametrične krivulje
