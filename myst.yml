@@ -20,15 +20,16 @@ project:
     - file: matana.md
     - title: Vaje po datumih
       children:
-        - file: 01.md
-        - file: 02.md
-        - file: 03.md
-        - file: 04.md
-        - file: 05.md
+        - file: 11.md
+        - file: 12.md
+        - file: 13.md
+        - file: 14.md
+        - file: 15.md
+        - file: 21.md
     - title: Vaje po temah
       children:
-        - file: 01_odvod.md
-        - file: 02_integral.md
+        - file: 1_odvod.md
+        - file: 2_integral.md
 site:
   template: book-theme
   options:
