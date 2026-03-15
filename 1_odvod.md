@@ -87,3 +87,9 @@ math:
 ```{include} vaje/polarneKrivulje.tex
 ```
 
+---
+(implicitneKrivulje_pt)=
+## Implicitne krivulje
+```{include} vaje/polarneKrivulje.tex
+```
+
