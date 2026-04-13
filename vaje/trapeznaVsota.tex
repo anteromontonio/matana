@@ -1,0 +1,13 @@
+\textbf{Predstavil:} 
+
+Dana je funkcija $f:[a,b] \to \mathbb{R}$ in delitev $\mathcal{D}: a = x_{0} < \cdots < x_{n} = b$. 
+\begin{enumerate}
+\item Za dano delitev intervala $\mathcal{D}$ in funkcijo $f$ definiramo izraz \[T(\mathcal{D}, f) = \sum_{i=1}^{n} \frac{1}{2} \left( f(x_{i}) + f(x_{i-1}) \right)\left(x_{i} - x_{i-1} \right).\]
+Kaj geometrijsko predstavlja zgornja vsota?
+\item Pokažite, da v posebnem primeru, ko so podintervali dane delitve enako veliki (t.j. $x_{i} - x_{i-1} = \frac{b-a}{n}$ za vse $i \in \left\{ 1, \dots, n \right\}$) velja \emph{trapezna formula}:
+\[T(\mathcal{D},f) = \frac{b-a}{2n}\left( f(x_{0}) + 2 f(x_{1}) + 2 f(x_{2}) + \cdots + 2 f(x_{n-1}) + f(x_{n}) \right).\]
+\item Izračunajte $T(\mathcal{D},f)$ za funkcijo $f(x) = e^{-x^{2}}$ in delitev intervala $[0,1]$ na šest enakih podintervalov, $\mathcal{D}: 0 < \frac{1}{6} < \frac{2}{6} < \frac{3}{6} < \frac{4}{6} < \frac{5}{6} < 1$. 
+\item Dokažite, da za vsako delitev $\mathcal{D}$ intervala $[a,b]$ in funkcijo $f:[a,b] \to \mathbb{R}$ velja neenakost \[s(\mathcal{D},f) \leq T(\mathcal{D},f) \leq S(\mathcal{D},f),\] kjer sta $s(\mathcal{D},f)$ in $S(\mathcal{D},f)$ spodnja oziroma zgornja Riemannova vsota funkcije $f$ glede na delitev $\mathcal{D}$.
+\item Dokažite, da je funkcija $f$ Riemannovo integrabilna na intervalu $[a,b]$ natanko tedaj, ko limita \[\lim_{n \to \infty} T(\mathcal{D}_{n},f)\] obstaja za vsako zaporedje delitev $\left( \mathcal{D}_{n} \right)_{n=1}^{\infty}$ intervala $[a,b]$, katerega premer konvergira proti $0$. 
+\end{enumerate}
+

@@ -1,0 +1,14 @@
+\textbf{Predstavil:} 
+
+Naj bodo $0 \leq a \leq b$ realna števila, $p \in \mathbb{N}$ naravno število in $f: [a,b] \to \mathbb{R}$ funkcija s predpisom $f(x) = x^{p}$. Naj bo $\mathcal{D}_{n} = (a=x_{0} <  x_{1} < \dots < x_{n}=b)$ delitev intervala $[a,b]$, za katerega so vsi \textit{razmerij} $\frac{x_{i}}{x_{i-1}}$ enaki konstanti $r$. 
+\begin{enumerate}
+  \item Dokažite, da je \[x_{i} = a \cdot c^{\frac{1}{n}}, \text{ kjer je } c= \frac{b}{a}\]
+  \item Dokažite, da velja za zgornjo Riemannovo vsoto:
+  \[\begin{aligned}
+  S(f,\mathcal{D}) 
+  &= a^{p+1}\left(  1-c^{\frac{1}{n}}\right)\sum_{i=1}^{n} \left( c^{\frac{p+1}{n}} \right)^{i} \\
+  &= \left( a^{p+1} - b^{p+1} \right)\left( c^{\frac{p+1}{n}} \right)\left( \frac{1-c^{\frac{-1}{n}}}{1-c^{\frac{p+1}{n}}} \right)\\
+  &= \left( b^{p+1} - a^{p+1} \right)\left( c^{\frac{p}{n}} \right)\left( \frac{1}{1+c^{\frac{1}{n}} + c^{\frac{2}{n}} + c^{\frac{p}{n}}} \right)
+  \end{aligned}\] in poiščite podobno formulo za spodnjo Riemannovo vsoto $s(f,\mathcal{D})$. 
+  \item Dokažite, da velje \[ \lim_{n \to \infty} \left( S(f,\mathcal{D}_{n}) - s(f,\mathcal{D}_{n}) \right) = 0\] in določite $\int_{a}^{b} x^{p} dx$.
+\end{enumerate}
