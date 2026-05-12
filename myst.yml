@@ -31,6 +31,8 @@ project:
       children:
         - file: 1_odvod.md
         - file: 2_integral.md
+        - file: 3_funZap.md
+        - file: 4_metProst.md
 site:
   template: book-theme
   options:

@@ -49,3 +49,27 @@
 **Pričakovani datum predstavitve: 24. april 2026**
 ```{include} /vaje/uporabaOI.tex
 ```
+
+--- 
+
+(gabrielovRog_pt)=
+## Gabrielov rog
+**Pričakovani datum predstavitve: 15. maj 2026**
+```{include} /vaje/gabrielovRog.tex
+```
+
+---
+
+(posploseniIntegrali_pt)=
+## Posplošeni integrali
+**Pričakovani datum predstavitve: 15. maj 2026**
+```{include} /vaje/posploseniIntegrali.tex
+```
+
+---
+
+(integraliKotVsote_pt)=
+## Integrali so podobni vsotam
+**Pričakovani datum predstavitve: 15. maj 2026**
+```{include} /vaje/integraliKotVsote.tex
+```
